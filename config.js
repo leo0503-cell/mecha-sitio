@@ -10,5 +10,5 @@ window.MECHA = {
   // Medición de visitas. Con null queda apagada.
   // goatcounter: el nombre de tu cuenta (el "micuenta" de micuenta.goatcounter.com).
   // ga4: el ID de medición de Google Analytics, con forma "G-XXXXXXXXXX".
-  medicion: { goatcounter: null, ga4: null },
+  medicion: { goatcounter: null, ga4: "G-NHZ0XHEVE7" },
 };
