@@ -1,0 +1,25 @@
+/* Ajustes sobre el diseño original. Se carga al final para no tocar style.css ni tech.css. */
+
+/* Textos informativos que en celular quedaban en 7–8 px. */
+@media (max-width: 760px) {
+  .chat-origin,
+  .chat-event,
+  .phone-header > div > span,
+  .demo-label,
+  .motion-toggle,
+  .scroll-cue,
+  .chapter-progress,
+  .service-name .micro,
+  .flow-heading > .micro,
+  .flow-map > div > span,
+  .console-insights .micro,
+  .console-footer,
+  .data-core-strip .micro,
+  .data-core-strip figcaption,
+  .source-chips > span,
+  .lab-caption,
+  .live-status,
+  .stage-top {
+    font-size: 10px;
+  }
+}

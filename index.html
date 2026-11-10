@@ -3,2236 +3,914 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mecha — Automatización e IA para PyMEs</title>
+    <meta name="theme-color" content="#16161a" />
+    <title>Mecha — Agencia de IA, marketing y análisis de datos</title>
     <meta
       name="description"
-      content="Mecha contesta tu WhatsApp, cotiza y agenda por ti. Automatización, página web, contenido y radar diario para PyMEs mexicanas."
+      content="Conectamos marketing, inteligencia artificial y análisis de datos para que tu negocio atraiga clientes, responda mejor y tome decisiones con información. Mecha, desde Aguascalientes para PyMEs mexicanas."
     />
-    <link rel="canonical" href="https://agenciamecha.com/" />
-    <meta property="og:url" content="https://agenciamecha.com/" />
+    <meta property="og:title" content="Mecha — Enciende lo que sigue." />
+    <meta
+      property="og:description"
+      content="Marketing que atrae. IA que resuelve. Datos que dan dirección. Una agencia que lo conecta y lo implementa."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_MX" />
     <meta
-      property="og:title"
-      content="Mecha — Automatización e IA para PyMEs"
+      property="og:image"
+      content="https://agenciamecha.com/assets/og-v2.jpg"
     />
-    <meta
-      property="og:description"
-      content="Tu negocio ya tiene todo. Falta prenderlo. Automatización y marketing para PyMEs mexicanas."
-    />
-    <meta property="og:image" content="https://agenciamecha.com/assets/img/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Mecha — Automatización e IA" />
+    <meta property="og:url" content="https://agenciamecha.com/" />
+    <meta property="og:site_name" content="Mecha" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Mecha — Automatización e IA para PyMEs"
-    />
-    <meta
-      name="twitter:description"
-      content="Tu negocio ya tiene todo. Falta prenderlo."
-    />
-    <meta name="twitter:image" content="https://agenciamecha.com/assets/img/og.png" />
-    <meta name="twitter:image:alt" content="Mecha — Automatización e IA" />
-    <meta
-      name="theme-color"
-      content="#F1EFE9"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#16161A"
-      media="(prefers-color-scheme: dark)"
-    />
-    <link
-      rel="icon"
-      href="assets/img/favicon-32.png"
-      type="image/png"
-      sizes="32x32"
-    />
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="canonical" href="https://agenciamecha.com/" />
+    <link rel="icon" href="assets/favicon-v2.png" />
     <link
       rel="preload"
-      href="assets/fuentes/Archivo-VF.woff2"
+      href="assets/Archivo-VF.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="css/tokens.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <script src="js/config.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <link
+      rel="preload"
+      href="assets/DMSans-VF.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tech.css" />
+    <link rel="stylesheet" href="ajustes.css" />
+    <link rel="preload" href="assets/mecha-poster-v2.jpg" as="image" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="config.js" defer></script>
+    <script src="main.js?v=2" defer></script>
+    <script src="tech.js" defer></script>
+    <script src="medicion.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Mecha",
+        "url": "https://agenciamecha.com/",
+        "image": "https://agenciamecha.com/assets/og-v2.jpg",
+        "description": "Agencia de inteligencia artificial y marketing con implementación de análisis de datos para PyMEs mexicanas.",
+        "telephone": "+524491557494",
+        "areaServed": "MX",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Aguascalientes",
+          "addressCountry": "MX"
+        },
+        "knowsAbout": [
+          "Inteligencia artificial",
+          "Marketing digital",
+          "Automatización",
+          "Análisis de datos"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <a class="skip-link" href="#principal">Saltar al contenido</a>
-    <header class="site-header">
-      <div class="container nav-shell">
-        <a class="brand" href="#inicio" aria-label="Mecha, inicio"
-          ><img
-            src="assets/img/robot-busto-480.webp"
-            width="480"
-            height="459"
-            alt=""
-          /><span class="brand-text"
-            ><span class="brand-name">MECHA</span
-            ><span class="brand-tagline">AUTOMATIZACIÓN E IA</span></span
-          ></a
-        >
-        <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
-          <a href="#que-hacemos">Qué hacemos</a><a href="#app">La app</a
-          ><a href="#paquetes">Paquetes</a><a href="#preguntas">Preguntas</a
-          ><a
-            class="button button-primary nav-cta"
-            href="#contacto"
-            data-whatsapp
-            >Escríbenos<svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-          ></a>
-        </nav>
-        <div class="nav-tools">
-          <button
-            type="button"
-            class="theme-toggle"
-            aria-label="Tema actual: sistema. Cambiar a claro."
-            title="Cambiar tema"
-            data-theme-toggle
-          >
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <circle cx="12" cy="12" r="8" />
-              <path d="M12 4v16" /></svg
-            ><span data-theme-label>Sistema</span></button
-          ><button
-            type="button"
-            class="menu-toggle"
-            aria-controls="navegacion"
-            aria-expanded="false"
-          >
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M4 7h16M4 12h16M4 17h16" /></svg
-            ><span class="sr-only">Abrir menú</span>
-          </button>
-        </div>
+    <div class="site-loader" aria-label="Preparando la página de Mecha">
+      <div class="loader-emblem" aria-hidden="true">
+        <i></i><i></i><i></i><span>✳</span>
       </div>
+      <div class="loader-brand">mecha<span>_</span></div>
+      <div class="loader-caption" role="status">Preparando la chispa</div>
+      <div class="loader-track" aria-hidden="true"><span></span></div>
+      <button class="loader-skip" type="button">Entrar al sitio ↗</button>
+    </div>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+      <a class="brand" href="#inicio" aria-label="Mecha, inicio"
+        ><span class="brand-spark" aria-hidden="true">✳</span>mecha<span
+          class="brand-dot"
+          >✳</span
+        ></a
+      >
+      <nav id="navegacion" aria-label="Navegación principal">
+        <a href="#sistema">Qué hacemos</a><a href="#datos">Los datos</a
+        ><a href="#proceso">Cómo trabajamos</a>
+      </nav>
+      <a class="nav-contact magnetic" href="#contacto"
+        >Prendamos algo <span aria-hidden="true">↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-controls="navegacion"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span></span><span></span>
+      </button>
     </header>
-    <main id="principal">
-      <section class="hero section" id="inicio" aria-labelledby="hero-title">
-        <div class="container hero-grid">
+    <main id="contenido">
+      <section class="hero-journey" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-sticky">
+          <div class="hero-grid" aria-hidden="true"></div>
+          <canvas id="hero-network" aria-hidden="true"></canvas>
+          <div class="spatial-floor" aria-hidden="true"></div>
+          <div class="hero-top">
+            <span><i></i> Agencia de IA + marketing + datos</span
+            ><span>Aguascalientes, México <span class="cross">+</span></span>
+          </div>
           <div class="hero-copy">
-            <p class="eyebrow">
-              <span class="spark-dot" aria-hidden="true"></span>AUTOMATIZACIÓN E
-              IA PARA PYMES
-            </p>
-            <h1 id="hero-title">
-              Tu negocio ya tiene todo.<br /><span>Falta prenderlo.</span>
-            </h1>
-            <p class="hero-description">
-              Mecha contesta tu WhatsApp, cotiza y agenda por ti. Y además te
-              hace el marketing: tu página web, dos posts y un reel cada semana,
-              y un radar diario de tu mercado y tu competencia, directo en tu
-              celular.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#contacto" data-whatsapp
-                >Escríbenos por WhatsApp<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+            <div class="hero-chapter active" data-chapter="0">
+              <h1 id="hero-title">
+                Tu negocio.<br />Su próxima<br /><span class="red-word"
+                  >chispa<span class="period">.</span></span
                 >
-                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></a
-              ><a class="text-link" href="#paquetes"
-                >Ver qué incluye<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+              </h1>
+              <p>
+                Unimos marketing, inteligencia artificial y análisis de datos
+                para encender lo que sigue en tu negocio.
+              </p>
+              <a class="hero-cta magnetic" href="#contacto"
+                ><span>Enciende tu negocio</span
+                ><span class="arrow-disc" aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="hero-chapter" data-chapter="1" inert>
+              <h2>
+                Más ideas.<br />Menos tareas.<br /><span class="red-word"
+                  >Más Mecha.</span
                 >
-                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-              ></a>
+              </h2>
+              <p>
+                Atrae clientes con marketing. Atiéndelos con IA. Dale
+                seguimiento a cada oportunidad.
+              </p>
+              <a class="chapter-link" href="#sistema"
+                >Conoce el sistema <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="hero-chapter" data-chapter="2" inert>
+              <h2>
+                Que cada<br />decisión tenga<br /><span class="red-word"
+                  >dirección.</span
+                >
+              </h2>
+              <p>
+                Implementamos la medición y el análisis para entender qué
+                funciona, dónde se atora y qué hacer después.
+              </p>
+              <a class="chapter-link" href="#datos"
+                >Dale sentido a tus datos <span aria-hidden="true">↗</span></a
+              >
             </div>
           </div>
           <div class="hero-visual">
-            <div class="hero-orbit" aria-hidden="true"></div>
-            <span class="hero-spark" aria-hidden="true"></span>
-            <div class="phone hero-phone">
-              <div class="phone-speaker" aria-hidden="true"></div>
-              <div class="phone-display">
-                <div class="phone-top">
-                  <img
-                    src="assets/img/robot-busto-480.webp"
-                    width="480"
-                    height="459"
-                    alt=""
-                  />
-                  <div>
-                    <span class="phone-title" data-phone-title>Radar</span
-                    ><span class="phone-date">Jueves 1 de octubre</span>
-                  </div>
-                  <span class="signal-dot" aria-hidden="true"></span>
-                </div>
-                <div class="phone-screen">
-                  <div class="radar-edition">
-                    Edición de hoy ·
-                    Tu negocio
-                  </div>
-                  <div class="radar-headline">
-                    <span class="radar-line" aria-hidden="true"></span>
-                    <h2>Tu competencia lanzó promoción de temporada</h2>
-                    <p>Qué ofreció, en qué red y qué puedes contestar hoy.</p>
-                  </div>
-                  <div class="radar-items">
-                    <div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <circle cx="12" cy="12" r="9" />
-                        <circle cx="12" cy="12" r="5" />
-                        <path d="m12 12 6-7" />
-                        <circle cx="12" cy="12" r="1" />
-                      </svg>
-                      <div>
-                        <h3>Competencia</h3>
-                        <p>Movimientos de la semana</p>
-                      </div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14m-6-6 6 6-6 6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <path d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6" />
-                      </svg>
-                      <div>
-                        <h3>Tu mercado</h3>
-                        <p>Lo que se mueve en tu giro</p>
-                      </div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14m-6-6 6 6-6 6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <rect x="3" y="5" width="18" height="16" rx="2" />
-                        <path d="M7 2v6M17 2v6M3 11h18m-13 4 3 3 5-5" />
-                      </svg>
-                      <div>
-                        <h3>Fechas que vienen</h3>
-                        <p>Buen Fin · 13 al 17 de noviembre</p>
-                      </div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14m-6-6 6 6-6 6" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="radar-idea">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"
-                      />
-                    </svg>
-                    <div>
-                      <h3>Idea para hoy</h3>
-                      <p>
-                        Una acción concreta: un post, una promoción, un mensaje
-                        a tus clientes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="phone-nav" aria-hidden="true">
-                  <span data-phone-nav="radar" class="active"
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <circle cx="12" cy="12" r="9" />
-                      <circle cx="12" cy="12" r="5" />
-                      <path d="m12 12 6-7" />
-                      <circle cx="12" cy="12" r="1" /></svg
-                    ><span>Radar</span></span
-                  ><span data-phone-nav="chat" class=""
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M20 11.5a8 8 0 0 1-8 8H5l-3 3v-11a9 9 0 0 1 18 0Z"
-                      />
-                      <path d="M7 9h8M7 13h5" /></svg
-                    ><span>Chats</span></span
-                  ><span data-phone-nav="content" class=""
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="3" />
-                      <path d="m9 8 7 4-7 4Z" /></svg
-                    ><span>Contenido</span></span
-                  ><span data-phone-nav="web" class=""
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="2" y="4" width="20" height="16" rx="2" />
-                      <path
-                        d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6"
-                      /></svg
-                    ><span>Web</span></span
-                  >
-                </div>
-              </div>
-            </div>
-            <img
-              class="hero-robot"
-              src="assets/img/robot-cuerpo-600.webp"
-              srcset="
-                assets/img/robot-cuerpo-600.webp   600w,
-                assets/img/robot-cuerpo-1100.webp 1100w
-              "
-              sizes="(min-width: 1100px) 280px, (min-width: 760px) 240px, 190px"
-              width="600"
-              height="968"
-              alt="Robot de Mecha, de cuerpo completo, con visor rojo"
-              fetchpriority="high"
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        class="section symptoms-section"
-        id="sintomas"
-        aria-labelledby="symptoms-title"
-      >
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <span class="section-mark" aria-hidden="true"></span>
-            <h2 id="symptoms-title">
-              Si te pasa una de estas,<br />Mecha es para ti.
-            </h2>
-            <p>No importa tu giro. Importa lo que te está quitando el día.</p>
-          </div>
-          <div class="symptoms-grid">
-            <article class="symptom-card" data-reveal>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 7v5l3 2" />
-              </svg>
-              <h3>Tardas en contestar el WhatsApp.</h3>
-              <p>
-                Y el cliente que escribió a las 10 de la noche ya le compró a
-                otro.
-              </p>
-            </article>
-            <article class="symptom-card" data-reveal>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="5" y="2" width="14" height="20" rx="2" />
-                <path d="M8 7h8M8 11h8M8 15h3m3-1v3m-2-1.5h4" />
-              </svg>
-              <h3>Cotizas a mano.</h3>
-              <p>
-                Cada cotización es copiar precios, sumar, sacar IVA y rezar por
-                no equivocarte.
-              </p>
-            </article>
-            <article class="symptom-card" data-reveal>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="3" y="5" width="18" height="16" rx="2" />
-                <path d="M7 2v6M17 2v6M3 11h18m-13 4 3 3 5-5" />
-              </svg>
-              <h3>Agendas por mensaje.</h3>
-              <p>Diez mensajes para cuadrar una cita, y luego no llega.</p>
-            </article>
-            <article class="symptom-card" data-reveal>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="12" r="9" />
-                <circle cx="12" cy="12" r="5" />
-                <path d="m12 12 6-7" />
-                <circle cx="12" cy="12" r="1" />
-              </svg>
-              <h3>No sabes qué está haciendo tu competencia.</h3>
-              <p>Te enteras de su promoción cuando ya te ganó la venta.</p>
-            </article>
-            <article class="symptom-card" data-reveal>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="3" />
-                <path d="m9 8 7 4-7 4Z" />
-              </svg>
-              <h3>Tus redes no se parecen a tu negocio.</h3>
-              <p>Publicas cuando te acuerdas, y se nota.</p>
-            </article>
-            <article class="symptom-card" data-reveal>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6" />
-              </svg>
-              <h3>No tienes página web, o nadie la encuentra.</h3>
-              <p>Tu cliente te busca en Google y aparece otro.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section
-        class="section"
-        id="que-hacemos"
-        aria-labelledby="services-title"
-      >
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <span class="section-mark" aria-hidden="true"></span>
-            <h2 id="services-title">Dos patas que se<br />venden juntas.</h2>
-            <p>
-              La automatización atiende a los clientes que ya llegan. El
-              marketing trae más. Una sin la otra se queda a medias.
-            </p>
-          </div>
-          <div class="services-grid">
-            <article class="service-card" data-reveal>
-              <div class="service-heading">
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M20 11.5a8 8 0 0 1-8 8H5l-3 3v-11a9 9 0 0 1 18 0Z" />
-                  <path d="M7 9h8M7 13h5" />
-                </svg>
-                <h3>Automatización</h3>
-              </div>
-              <ul>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Un asistente en tu WhatsApp, 24/7.</h4>
-                    <p>
-                      Contesta las preguntas de siempre, horarios, ubicación,
-                      precios.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Cotiza con tu lista de precios.</h4>
-                    <p>
-                      Tu Excel se queda igual; sale la cotización lista para
-                      mandar.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Agenda y recuerda la cita.</h4>
-                    <p>Sin ir y venir de mensajes.</p>
-                  </div>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Te pasa la conversación cuando te toca.</h4>
-                    <p>
-                      Si el cliente necesita a una persona, te avisa y entras
-                      tú.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </article>
-            <article class="service-card" data-reveal>
-              <div class="service-heading">
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"
-                  />
-                </svg>
-                <h3>Marketing</h3>
-              </div>
-              <ul>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Tu página web, ya hecha.</h4>
-                    <p>
-                      Diseño, textos y publicación. Dominio y hosting se
-                      transparentan aparte.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Dos posts y un reel cada semana.</h4>
-                    <p>
-                      Con tu marca, planeados contigo y aprobados desde la app.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>Tu imagen, renovada.</h4>
-                    <p>
-                      Perfil, portadas y plantillas con los colores de tu
-                      negocio.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" />
-                  </svg>
-                  <div>
-                    <h4>La campaña que llena tu WhatsApp.</h4>
-                    <p>
-                      Anuncios en Meta que mandan clientes directo a tu
-                      asistente. La inversión en pauta va aparte.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section
-        class="section content-section"
-        id="contenido"
-        aria-labelledby="content-title"
-      >
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <span class="section-mark" aria-hidden="true"></span>
-            <h2 id="content-title">Así se ve lo<br />que publicamos.</h2>
-            <p>
-              Esto es contenido de Mecha, hecho con el mismo método que usamos
-              para ti.
-            </p>
-          </div>
-          <div class="content-showcase">
-            <div class="reel-frame" data-reveal>
-              <div class="phone-speaker" aria-hidden="true"></div>
+            <div class="robot-stage">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
               <video
-                width="540"
-                height="960"
-                poster="assets/contenido/reel-portada.webp"
+                id="hero-video"
                 muted
-                loop
                 playsinline
-                controls
-                preload="none"
-                aria-label="Reel de Mecha sobre el folio automático"
+                preload="auto"
+                poster="assets/mecha-poster-v2.jpg"
+                aria-label="Robot de Mecha animado al recorrer la página"
               >
-                <source
-                  src="assets/contenido/reel-folio.mp4"
-                  type="video/mp4"
-                />
-                Tu navegador no reproduce este video.
-                <a href="assets/contenido/reel-folio.mp4"
-                  >Ver el reel de Mecha</a
-                >.
+                <source src="assets/mecha-scroll-v2.mp4" type="video/mp4" />
               </video>
-            </div>
-            <div class="posts-area">
-              <ul
-                class="posts-strip"
-                tabindex="0"
-                aria-label="Portadas de carrusel, desliza para ver más"
-              >
-                <li>
-                  <img
-                    src="assets/contenido/post-folio-01.webp"
-                    width="540"
-                    height="675"
-                    alt="Portada de carrusel: Esta hoja de papel ya no existe"
-                    loading="lazy"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="assets/contenido/post-4cosas-01.webp"
-                    width="540"
-                    height="675"
-                    alt="Portada de carrusel: 4 cosas que tu negocio ya puede dejar de hacer a mano"
-                    loading="lazy"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="assets/contenido/post-reclamo-01.webp"
-                    width="540"
-                    height="675"
-                    alt="Portada de carrusel sobre cómo atender un reclamo"
-                    loading="lazy"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="assets/contenido/post-4cosas-02.webp"
-                    width="540"
-                    height="675"
-                    alt="Slide: contestar el mismo WhatsApp 20 veces"
-                    loading="lazy"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="assets/contenido/post-folio-05.webp"
-                    width="540"
-                    height="675"
-                    alt="Slide: el folio automático"
-                    loading="lazy"
-                  />
-                </li>
-              </ul>
-              <div class="strip-navigation">
-                <p class="strip-hint">
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-                  ><span>Desliza para ver más</span>
-                </p>
-                <div>
-                  <button
-                    class="strip-button"
-                    type="button"
-                    data-strip-direction="-1"
-                    aria-label="Portadas anteriores"
-                  >
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h14m-6-6 6 6-6 6" />
-                    </svg></button
-                  ><button
-                    class="strip-button"
-                    type="button"
-                    data-strip-direction="1"
-                    aria-label="Portadas siguientes"
-                  >
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h14m-6-6 6 6-6 6" />
-                    </svg>
-                  </button>
-                </div>
+              <div class="visual-label label-left">
+                <span class="node-dot"></span>Inteligencia aplicada
               </div>
-              <p class="content-note">
-                Ritmo del paquete completo:
-                <strong>2 posts + 1 reel por semana</strong>, en Instagram y
-                Facebook.
-              </p>
+              <div class="visual-label label-right">
+                <span class="node-dot"></span>Hecho para tu negocio
+              </div>
+              <span class="visual-coordinate" aria-hidden="true">M / IA</span>
+              <div class="scan-brackets" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section app-section" id="app" aria-labelledby="app-title">
-        <div class="container app-grid">
-          <div>
-            <div class="section-heading" data-reveal>
-              <span class="section-mark" aria-hidden="true"></span>
-              <h2 id="app-title">Tu negocio,<br />en tu celular.</h2>
-              <p>
-                Todo lo que hace Mecha lo ves en una app. Se instala desde el
-                navegador en iPhone y Android, sin pasar por tiendas de apps, y
-                también funciona en la compu.
-              </p>
+          <div class="hero-signal" aria-hidden="true">
+            <span>Marketing</span><i></i><span>IA</span><i></i><span>Datos</span
+            ><b>Conectados.</b>
+          </div>
+          <div class="hero-bottom">
+            <div class="scroll-cue">
+              <span class="scroll-icon" aria-hidden="true">↓</span
+              ><span>Haz scroll.<br /><b>La chispa es el inicio.</b></span>
             </div>
             <div
-              class="app-tabs"
-              role="tablist"
-              aria-label="Pantallas de la app Mecha"
-              aria-orientation="vertical"
+              class="chapter-progress"
+              aria-label="Progreso de la introducción"
             >
-              <button
-                class="app-tab"
-                type="button"
-                role="tab"
-                id="tab-radar"
-                aria-controls="panel-radar"
-                aria-selected="true"
-                tabindex="0"
-                data-app-tab="radar"
-                data-title="Radar"
-              >
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="9" />
-                  <circle cx="12" cy="12" r="5" />
-                  <path d="m12 12 6-7" />
-                  <circle cx="12" cy="12" r="1" /></svg
-                ><span
-                  ><span class="app-tab-title">Radar diario.</span
-                  ><span class="app-tab-copy"
-                    >Cada mañana, una edición nueva sobre tu negocio: qué
-                    publicó tu competencia, qué se mueve en tu giro y tu ciudad,
-                    qué fechas vienen y una idea concreta para hoy.</span
-                  ></span
-                ><svg
-                  class="icon tab-arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg></button
-              ><button
-                class="app-tab"
-                type="button"
-                role="tab"
-                id="tab-chat"
-                aria-controls="panel-chat"
-                aria-selected="false"
-                tabindex="-1"
-                data-app-tab="chat"
-                data-title="Conversaciones"
-              >
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M20 11.5a8 8 0 0 1-8 8H5l-3 3v-11a9 9 0 0 1 18 0Z" />
-                  <path d="M7 9h8M7 13h5" /></svg
-                ><span
-                  ><span class="app-tab-title">Conversaciones.</span
-                  ><span class="app-tab-copy"
-                    >Lo que contestó el asistente, las cotizaciones que mandó,
-                    las citas que agendó y las conversaciones donde te toca
-                    entrar a ti.</span
-                  ></span
-                ><svg
-                  class="icon tab-arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg></button
-              ><button
-                class="app-tab"
-                type="button"
-                role="tab"
-                id="tab-content"
-                aria-controls="panel-content"
-                aria-selected="false"
-                tabindex="-1"
-                data-app-tab="content"
-                data-title="Contenido de la semana"
-              >
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="3" />
-                  <path d="m9 8 7 4-7 4Z" /></svg
-                ><span
-                  ><span class="app-tab-title">Contenido de la semana.</span
-                  ><span class="app-tab-copy"
-                    >Ves los dos posts y el reel antes de que salgan. Apruebas o
-                    pides cambios con un toque.</span
-                  ></span
-                ><svg
-                  class="icon tab-arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg></button
-              ><button
-                class="app-tab"
-                type="button"
-                role="tab"
-                id="tab-web"
-                aria-controls="panel-web"
-                aria-selected="false"
-                tabindex="-1"
-                data-app-tab="web"
-                data-title="Tu web"
-              >
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <rect x="2" y="4" width="20" height="16" rx="2" />
-                  <path d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6" /></svg
-                ><span
-                  ><span class="app-tab-title">Tu web.</span
-                  ><span class="app-tab-copy"
-                    >El estado de tu página y lo que hay que actualizar.</span
-                  ></span
-                ><svg
-                  class="icon tab-arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </button>
+              <span id="chapter-label">La chispa</span>
+              <div class="progress-track"><i id="film-progress"></i></div>
+              <span class="chapter-count" aria-hidden="true">01 / 03</span>
             </div>
-          </div>
-          <div class="app-visual" data-reveal>
-            <span class="app-visual-circle" aria-hidden="true"></span>
-            <div class="phone app-phone" data-app-phone>
-              <div class="phone-speaker" aria-hidden="true"></div>
-              <div class="phone-display">
-                <div class="phone-top">
-                  <img
-                    src="assets/img/robot-busto-480.webp"
-                    width="480"
-                    height="459"
-                    alt=""
-                    loading="lazy"
-                  />
-                  <div>
-                    <span class="phone-title" data-phone-title>Radar</span
-                    ><span class="phone-date">Jueves 1 de octubre</span>
-                  </div>
-                  <span class="signal-dot" aria-hidden="true"></span>
-                </div>
-                <div
-                  id="panel-radar"
-                  class="phone-screen"
-                  role="tabpanel"
-                  aria-labelledby="tab-radar"
-                  tabindex="0"
-                >
-                  <div class="radar-edition">
-                    Edición de hoy ·
-                    Tu negocio
-                  </div>
-                  <div class="radar-headline">
-                    <span class="radar-line" aria-hidden="true"></span>
-                    <h3>Tu competencia lanzó promoción de temporada</h3>
-                    <p>Qué ofreció, en qué red y qué puedes contestar hoy.</p>
-                  </div>
-                  <div class="radar-items">
-                    <div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <circle cx="12" cy="12" r="9" />
-                        <circle cx="12" cy="12" r="5" />
-                        <path d="m12 12 6-7" />
-                        <circle cx="12" cy="12" r="1" />
-                      </svg>
-                      <div>
-                        <h4>Competencia</h4>
-                        <p>Movimientos de la semana</p>
-                      </div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14m-6-6 6 6-6 6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <path d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6" />
-                      </svg>
-                      <div>
-                        <h4>Tu mercado</h4>
-                        <p>Lo que se mueve en tu giro</p>
-                      </div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14m-6-6 6 6-6 6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <rect x="3" y="5" width="18" height="16" rx="2" />
-                        <path d="M7 2v6M17 2v6M3 11h18m-13 4 3 3 5-5" />
-                      </svg>
-                      <div>
-                        <h4>Fechas que vienen</h4>
-                        <p>Buen Fin · 13 al 17 de noviembre</p>
-                      </div>
-                      <svg
-                        class="icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14m-6-6 6 6-6 6" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="radar-idea">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"
-                      />
-                    </svg>
-                    <div>
-                      <h4>Idea para hoy</h4>
-                      <p>
-                        Una acción concreta: un post, una promoción, un mensaje
-                        a tus clientes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="panel-chat"
-                  class="phone-screen alternate-screen"
-                  role="tabpanel"
-                  aria-labelledby="tab-chat"
-                  tabindex="0"
-                  hidden
-                >
-                  <div class="radar-edition">
-                    Conversaciones ·
-                    Tu negocio
-                  </div>
-                  <h3>Lo que contestó el asistente</h3>
-                  <div class="sample-card">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M20 11.5a8 8 0 0 1-8 8H5l-3 3v-11a9 9 0 0 1 18 0Z"
-                      />
-                      <path d="M7 9h8M7 13h5" />
-                    </svg>
-                    <h4>Un asistente en tu WhatsApp, 24/7.</h4>
-                    <p>
-                      Contesta las preguntas de siempre, horarios, ubicación,
-                      precios.
-                    </p>
-                  </div>
-                  <div class="sample-row">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="5" y="2" width="14" height="20" rx="2" />
-                      <path d="M8 7h8M8 11h8M8 15h3m3-1v3m-2-1.5h4" /></svg
-                    ><span>Cotiza con tu lista de precios.</span>
-                  </div>
-                  <div class="sample-row">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="3" y="5" width="18" height="16" rx="2" />
-                      <path d="M7 2v6M17 2v6M3 11h18m-13 4 3 3 5-5" /></svg
-                    ><span>Agenda y recuerda la cita.</span>
-                  </div>
-                  <div class="radar-idea">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M20 11.5a8 8 0 0 1-8 8H5l-3 3v-11a9 9 0 0 1 18 0Z"
-                      />
-                      <path d="M7 9h8M7 13h5" />
-                    </svg>
-                    <div>
-                      <h4>Te pasa la conversación cuando te toca.</h4>
-                      <p>
-                        Si el cliente necesita a una persona, te avisa y entras
-                        tú.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="panel-content"
-                  class="phone-screen alternate-screen"
-                  role="tabpanel"
-                  aria-labelledby="tab-content"
-                  tabindex="0"
-                  hidden
-                >
-                  <div class="radar-edition">
-                    Contenido de la semana ·
-                    Tu negocio
-                  </div>
-                  <h3>Dos posts y un reel cada semana.</h3>
-                  <img
-                    class="phone-content-preview"
-                    src="assets/contenido/post-folio-01.webp"
-                    width="540"
-                    height="675"
-                    loading="lazy"
-                    alt="Portada de carrusel: Esta hoja de papel ya no existe"
-                  />
-                  <div class="radar-idea">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="m5 12 4 4L19 6" />
-                    </svg>
-                    <div>
-                      <h4>Contenido de la semana.</h4>
-                      <p>
-                        Ves los dos posts y el reel antes de que salgan.
-                        Apruebas o pides cambios con un toque.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="panel-web"
-                  class="phone-screen alternate-screen"
-                  role="tabpanel"
-                  aria-labelledby="tab-web"
-                  tabindex="0"
-                  hidden
-                >
-                  <div class="radar-edition">
-                    Tu web · Tu negocio
-                  </div>
-                  <h3>Tu página web, ya hecha.</h3>
-                  <div class="web-preview" aria-hidden="true">
-                    <div class="web-preview-bar"></div>
-                    <div class="web-preview-heading"></div>
-                    <div class="web-preview-line"></div>
-                    <div class="web-preview-line short"></div>
-                    <div class="web-preview-blocks">
-                      <span></span><span></span>
-                    </div>
-                  </div>
-                  <div class="sample-card">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="2" y="4" width="20" height="16" rx="2" />
-                      <path d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6" />
-                    </svg>
-                    <h4>Tu web.</h4>
-                    <p>El estado de tu página y lo que hay que actualizar.</p>
-                  </div>
-                  <div class="radar-idea">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"
-                      />
-                    </svg>
-                    <div>
-                      <h4>Tu página web, ya hecha.</h4>
-                      <p>
-                        Diseño, textos y publicación. Dominio y hosting se
-                        transparentan aparte.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="phone-nav" aria-hidden="true">
-                  <span data-phone-nav="radar" class="active"
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <circle cx="12" cy="12" r="9" />
-                      <circle cx="12" cy="12" r="5" />
-                      <path d="m12 12 6-7" />
-                      <circle cx="12" cy="12" r="1" /></svg
-                    ><span>Radar</span></span
-                  ><span data-phone-nav="chat" class=""
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M20 11.5a8 8 0 0 1-8 8H5l-3 3v-11a9 9 0 0 1 18 0Z"
-                      />
-                      <path d="M7 9h8M7 13h5" /></svg
-                    ><span>Chats</span></span
-                  ><span data-phone-nav="content" class=""
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="3" />
-                      <path d="m9 8 7 4-7 4Z" /></svg
-                    ><span>Contenido</span></span
-                  ><span data-phone-nav="web" class=""
-                    ><svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="2" y="4" width="20" height="16" rx="2" />
-                      <path
-                        d="M2 9h20M6 6.5h.01M9 6.5h.01M7 13h10M7 16h6"
-                      /></svg
-                    ><span>Web</span></span
-                  >
-                </div>
-              </div>
-            </div>
+            <button class="motion-toggle" type="button" aria-pressed="false">
+              Pausar movimiento <span aria-hidden="true">Ⅱ</span>
+            </button>
           </div>
         </div>
       </section>
-      <section
-        class="section dark-section radar-section"
-        id="radar"
-        aria-labelledby="radar-title"
-      >
-        <div class="container radar-grid">
-          <div data-reveal>
-            <p class="eyebrow">
-              <span class="spark-dot" aria-hidden="true"></span>RADAR DIARIO
-            </p>
-            <h2 id="radar-title">
-              Un periódico<br />de tu negocio,<br />todos los días.
-            </h2>
-            <p class="radar-description">
-              No es un resumen de noticias genéricas. Lo arma Mecha con lo que
-              le importa a tu negocio: tu giro, tu ciudad y los competidores que
-              tú nos digas.
-            </p>
-            <div class="radar-decoration" aria-hidden="true">
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="12" r="9" />
-                <circle cx="12" cy="12" r="5" />
-                <path d="m12 12 6-7" />
-                <circle cx="12" cy="12" r="1" />
-              </svg>
-            </div>
-          </div>
-          <ul class="radar-features">
-            <li>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              <div>
-                <h3>La portada.</h3>
-                <p>Lo más importante del día para ti, en dos líneas.</p>
-              </div>
-            </li>
-            <li>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              <div>
-                <h3>Tu competencia.</h3>
-                <p>
-                  Qué publicaron, qué promociones lanzaron, qué cambió en sus
-                  precios o en sus reseñas.
-                </p>
-              </div>
-            </li>
-            <li>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              <div>
-                <h3>Tu mercado.</h3>
-                <p>Noticias del giro y de tu ciudad que sí te afectan.</p>
-              </div>
-            </li>
-            <li>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              <div>
-                <h3>Fechas que vienen.</h3>
-                <p>
-                  Quincenas, temporadas, días festivos y eventos que conviene
-                  preparar.
-                </p>
-              </div>
-            </li>
-            <li>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              <div>
-                <h3>Idea para hoy.</h3>
-                <p>
-                  Una acción concreta: un post, una promoción, un mensaje a tus
-                  clientes.
-                </p>
-              </div>
-            </li>
-            <li>
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              <div>
-                <h3>Con fuentes.</h3>
-                <p>
-                  Cada nota trae la liga de donde salió. Si no se pudo
-                  confirmar, lo dice.
-                </p>
-              </div>
-            </li>
-          </ul>
+      <div class="ticker" aria-label="Estrategia, creatividad e implementación">
+        <div aria-hidden="true">
+          <span>Estrategia</span>✳<span>Creatividad</span>✳<span
+            >Inteligencia artificial</span
+          >✳<span>Datos</span>✳<span>Implementación</span>✳<span>Estrategia</span>✳<span>Creatividad</span>✳<span
+            >Inteligencia artificial</span
+          >✳<span>Datos</span>✳<span>Implementación</span>✳
         </div>
-      </section>
-      <section class="section" id="paquetes" aria-labelledby="packages-title">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <span class="section-mark" aria-hidden="true"></span>
-            <h2 id="packages-title">Tres paquetes.<br />Empezamos por tu diagnóstico.</h2>
+      </div>
+      <section class="manifesto light section-pad" id="sistema">
+        <div class="section-meta">
+          <span>El sistema Mecha</span
+          ><span class="mini-spark" aria-hidden="true">✳</span>
+        </div>
+        <div class="manifesto-layout">
+          <h2 class="reveal">
+            Atraer.<br />Resolver.<br /><span>Entender.</span>
+          </h2>
+          <div class="manifesto-copy reveal">
+            <p class="lead">
+              Tu marketing, tu operación y tus datos tienen mucho que decirse.
+            </p>
             <p>
-              Primero vemos qué le conviene a tu negocio y te pasamos una cotización clara. El arranque paga la implementación; la mensualidad, que siga
-              funcionando y mejorando.
+              Somos una agencia de IA y marketing con implementación de análisis
+              de datos. Conectamos estas piezas para que tu negocio tenga una
+              ruta clara: desde el primer clic hasta la siguiente decisión.
             </p>
+            <p>
+              Diseñamos la estrategia, hacemos el trabajo y dejamos funcionando
+              las herramientas contigo.
+            </p>
+            <a class="text-link" href="#servicios"
+              >Mira cómo se conecta todo <span aria-hidden="true">↓</span></a
+            >
           </div>
-          <div class="packages-grid">
-            <article class="package-card" data-reveal>
-              <h3>Chispa</h3>
-              <p class="package-for">Para empezar a contestar a tiempo.</p>
-              <ul>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span
-                    >Asistente de WhatsApp que contesta las 10 preguntas de
-                    siempre</span
-                  >
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Horarios, ubicación y canalización a una persona</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>App Mecha: conversaciones y avisos</span>
-                </li>
-              </ul>
-              <div class="package-price"><p><strong>A cotizar</strong><span>en tu diagnóstico</span></p></div>
-              <a
-                class="button button-outline"
-                href="#contacto"
-                data-whatsapp
-                data-package="Chispa"
-                >Escríbenos por WhatsApp<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-              ></a>
-            </article>
-            <article class="package-card" data-reveal>
-              <h3>Mecha</h3>
-              <p class="package-for">Para que el WhatsApp también venda.</p>
-              <ul>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Todo lo de Chispa</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Cotiza con tu lista de precios</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Agenda y recuerda la cita</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Reporte diario de conversaciones</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span
-                    ><strong>Radar diario</strong> de tu mercado y tu
-                    competencia en la app</span
-                  >
-                </li>
-              </ul>
-              <div class="package-price"><p><strong>A cotizar</strong><span>en tu diagnóstico</span></p></div>
-              <a
-                class="button button-outline"
-                href="#contacto"
-                data-whatsapp
-                data-package="Mecha"
-                >Escríbenos por WhatsApp<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-              ></a>
-            </article>
-            <article class="package-card package-featured" data-reveal>
-              <span class="package-label">El completo</span>
-              <h3>Mecha + contenido</h3>
-              <p class="package-for">
-                El completo: atiende, vende y se ve bien.
-              </p>
-              <ul>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Todo lo de Mecha</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>Tu página web, ya hecha</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span>2 posts y 1 reel cada semana</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span
-                    >Renovación de imagen: perfil, portadas y plantillas</span
-                  >
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m5 12 4 4L19 6" /></svg
-                  ><span
-                    >Campaña en Meta que llena tu WhatsApp (pauta aparte)</span
-                  >
-                </li>
-              </ul>
-              <div class="package-price"><p><strong>A cotizar</strong><span>en tu diagnóstico</span></p></div>
-              <a
-                class="button button-light"
-                href="#contacto"
-                data-whatsapp
-                data-package="Mecha + contenido"
-                >Escríbenos por WhatsApp<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-              ></a>
-            </article>
+        </div>
+        <div
+          class="system-line"
+          aria-label="Marketing atrae, IA atiende, datos orientan"
+        >
+          <span><b>Marketing</b>Atrae la oportunidad</span
+          ><i aria-hidden="true">↗</i
+          ><span><b>Inteligencia artificial</b>Hace avanzar el trabajo</span
+          ><i aria-hidden="true">↗</i
+          ><span><b>Análisis de datos</b>Orienta la siguiente acción</span>
+        </div>
+      </section>
+      <section class="robot-lab section-pad" aria-labelledby="robot-lab-title">
+        <div class="lab-copy">
+          <span class="micro"><i></i> Inteligencia aplicada</span>
+          <h2 id="robot-lab-title" class="reveal">
+            Más capacidad.<br />La misma <span>dirección.</span>
+          </h2>
+          <p>
+            Tu equipo conoce el negocio. Mecha conecta la creatividad, la
+            atención y la información para que ese conocimiento llegue más
+            lejos.
+          </p>
+          <a href="#recorrido" class="lab-link"
+            >Explora cómo trabaja <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <figure class="lab-image" data-tilt="5">
+          <img
+            src="assets/mecha-operator-v2.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            alt="Nuevo robot de Mecha presentando una estructura de datos conectados en cristal y luz roja"
+          />
+          <div class="lab-grid" aria-hidden="true"></div>
+          <span class="lab-caption">Estrategia → implementación</span>
+        </figure>
+        <div class="lab-bottom" aria-hidden="true">
+          <span>Una visión compartida.</span
+          ><span>Ideas / sistemas / decisiones</span><span>✳</span>
+        </div>
+      </section>
+      <section class="symptoms section-pad" id="problemas">
+        <div class="symptom-heading">
+          <h2 class="reveal">¿Dónde se está<br />apagando tu negocio?</h2>
+          <p>
+            No importa tu giro. Importa lo que te quita tiempo, clientes o
+            claridad.
+          </p>
+        </div>
+        <div class="symptom-layout">
+          <div
+            class="symptom-options"
+            role="tablist"
+            aria-label="Situaciones de tu negocio"
+            aria-orientation="vertical"
+          >
+            <button
+              id="symptom-tab-0"
+              role="tab"
+              aria-selected="true"
+              aria-controls="symptom-panel"
+              data-symptom="0"
+            >
+              <span>WhatsApp se me acumula</span><i aria-hidden="true">↗</i>
+            </button>
+            <button
+              id="symptom-tab-1"
+              role="tab"
+              aria-selected="false"
+              aria-controls="symptom-panel"
+              tabindex="-1"
+              data-symptom="1"
+            >
+              <span>Cotizo y agendo a mano</span><i aria-hidden="true">↗</i>
+            </button>
+            <button
+              id="symptom-tab-2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="symptom-panel"
+              tabindex="-1"
+              data-symptom="2"
+            >
+              <span>Publico sin una estrategia</span><i aria-hidden="true">↗</i>
+            </button>
+            <button
+              id="symptom-tab-3"
+              role="tab"
+              aria-selected="false"
+              aria-controls="symptom-panel"
+              tabindex="-1"
+              data-symptom="3"
+            >
+              <span>Tengo datos, pero poca claridad</span
+              ><i aria-hidden="true">↗</i>
+            </button>
           </div>
-          <p class="fine-print">
-            Dominio, hosting e inversión en
-            anuncios se cotizan aparte y a la vista.
+          <div
+            class="symptom-panel"
+            id="symptom-panel"
+            role="tabpanel"
+            aria-labelledby="symptom-tab-0"
+            tabindex="0"
+          >
+            <div class="panel-mark" aria-hidden="true">↗</div>
+            <span class="micro" id="symptom-category">IA + seguimiento</span>
+            <h3 id="symptom-title">Cada conversación merece una respuesta.</h3>
+            <p id="symptom-description">
+              Conectamos un asistente a tu WhatsApp para resolver preguntas
+              frecuentes, organizar oportunidades y pasar la conversación a tu
+              equipo cuando haga falta.
+            </p>
+            <a id="symptom-cta" class="text-link" href="#contacto"
+              >Quiero resolver esto <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="services light section-pad" id="servicios">
+        <div class="section-meta">
+          <span>Tres frentes. Una dirección.</span
+          ><span>Hecho para PyMEs mexicanas</span>
+        </div>
+        <h2 class="services-title reveal">
+          La creatividad prende.<br />La inteligencia <em>conecta.</em>
+        </h2>
+        <article class="service-row">
+          <div class="service-number">01</div>
+          <div class="service-name">
+            <span class="micro">Que te vean. Que te elijan.</span>
+            <h3>Marketing <br />con intención.</h3>
+          </div>
+          <div class="service-detail">
+            <p>
+              Una presencia que se parece a tu negocio y una estrategia para
+              generar conversaciones con las personas correctas.
+            </p>
+            <ul>
+              <li>Estrategia y contenido de marca</li>
+              <li>Sitios web y landing pages</li>
+              <li>Campañas y seguimiento comercial</li>
+              <li>Identidad visual y producción creativa</li>
+            </ul>
+          </div>
+          <div class="service-art marketing-art" aria-hidden="true">
+            <div class="poster-small">
+              HOLA,<br /><b>FUTURO</b><span>Hay algo bueno por venir. ↗</span>
+            </div>
+            <span class="poster-orbit">✳</span>
+          </div>
+        </article>
+        <article class="service-row">
+          <div class="service-number">02</div>
+          <div class="service-name">
+            <span class="micro">Menos fricción en el día a día.</span>
+            <h3>IA que sí <br />se implementa.</h3>
+          </div>
+          <div class="service-detail">
+            <p>
+              Automatizaciones construidas alrededor de tu forma de trabajar,
+              con criterios claros y una persona disponible cuando se necesita.
+            </p>
+            <ul>
+              <li>Asistentes de atención por WhatsApp</li>
+              <li>Cotizaciones, agenda y recordatorios</li>
+              <li>Seguimiento de prospectos</li>
+              <li>Conexión entre tus herramientas</li>
+            </ul>
+          </div>
+          <div class="service-art automation-art" aria-hidden="true">
+            <span>Nuevo mensaje <i>↗</i></span>
+            <div class="connector"></div>
+            <b>✳ MECHA</b>
+            <div class="connector"></div>
+            <span>El trabajo avanza <i>✓</i></span>
+          </div>
+        </article>
+        <article class="service-row">
+          <div class="service-number">03</div>
+          <div class="service-name">
+            <span class="micro">Visibilidad para decidir.</span>
+            <h3>Datos con <br />dirección.</h3>
+          </div>
+          <div class="service-detail">
+            <p>
+              Implementamos la captura, conexión y análisis de información. La
+              convertimos en preguntas que puedes responder y acciones que
+              puedes ejecutar.
+            </p>
+            <ul>
+              <li>Medición y organización de datos</li>
+              <li>Tableros de marketing y ventas</li>
+              <li>Análisis de procesos y oportunidades</li>
+              <li>Reportes con próximos pasos</li>
+            </ul>
+          </div>
+          <div class="service-art data-art" aria-hidden="true">
+            <span>FUENTES → CLARIDAD</span>
+            <div class="data-bars">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <b>Una mejor pregunta.<br />Una mejor decisión. ↗</b>
+          </div>
+        </article>
+      </section>
+      <section class="data-section section-pad" id="datos">
+        <div class="section-meta">
+          <span>Inteligencia de negocio, aterrizada</span
+          ><span class="live-status"><i></i> Datos con contexto</span>
+        </div>
+        <div class="data-heading">
+          <h2 class="reveal">
+            Menos suposiciones.<br /><span>Más dirección.</span>
+          </h2>
+          <p>
+            ¿Qué campaña trae oportunidades? ¿Dónde se pierde el seguimiento?
+            ¿Qué proceso está consumiendo el día? Conectamos la información para
+            que puedas verlo.
+          </p>
+        </div>
+        <div class="data-core-strip">
+          <div>
+            <span class="micro">Cada pieza tiene un lugar</span>
+            <h3>
+              De información dispersa<br />a una vista <span>conectada.</span>
+            </h3>
+            <div class="source-chips">
+              <span>Marketing</span><span>Conversaciones</span
+              ><span>Operación</span>
+            </div>
+          </div>
+          <figure data-tilt="8">
+            <img
+              src="assets/mecha-core-v2.webp"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              alt="Núcleo de cristal rojo entre anillos de titanio como representación de los datos conectados"
+            />
+            <figcaption>Concepto visual del sistema Mecha</figcaption>
+          </figure>
+        </div>
+        <div class="data-console" data-tilt="1.5">
+          <div class="console-top">
+            <span class="console-brand">✳ mecha <b>/ inteligencia</b></span
+            ><span class="demo-label"
+              >Vista ilustrativa · sin datos de clientes</span
+            >
+          </div>
+          <div class="data-tabs" role="tablist" aria-label="Áreas de análisis">
+            <button
+              id="data-tab-0"
+              role="tab"
+              aria-selected="true"
+              aria-controls="data-panel"
+              data-area="0"
+            >
+              Marketing <span aria-hidden="true">↗</span></button
+            ><button
+              id="data-tab-1"
+              role="tab"
+              aria-selected="false"
+              aria-controls="data-panel"
+              tabindex="-1"
+              data-area="1"
+            >
+              Ventas <span aria-hidden="true">↗</span></button
+            ><button
+              id="data-tab-2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="data-panel"
+              tabindex="-1"
+              data-area="2"
+            >
+              Operación <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div
+            class="console-body"
+            id="data-panel"
+            role="tabpanel"
+            aria-labelledby="data-tab-0"
+            tabindex="0"
+          >
+            <div class="flow-heading">
+              <span class="micro" id="data-eyebrow"
+                >Del clic a la conversación</span
+              >
+              <h3 id="data-question">
+                ¿Qué está trayendo<br />las oportunidades correctas?
+              </h3>
+            </div>
+            <div class="flow-map" id="flow-map">
+              <div><i>↗</i><b>Campaña</b><span>Origen</span></div>
+              <span class="flow-wire" aria-hidden="true"></span>
+              <div><i>↔</i><b>Conversación</b><span>Interés</span></div>
+              <span class="flow-wire" aria-hidden="true"></span>
+              <div><i>✓</i><b>Oportunidad</b><span>Siguiente paso</span></div>
+            </div>
+            <div class="console-insights">
+              <div>
+                <span class="micro">Conectamos</span>
+                <p id="data-sources">
+                  Campañas, sitio web y seguimiento de prospectos.
+                </p>
+              </div>
+              <div>
+                <span class="micro">Analizamos</span>
+                <p id="data-analysis">
+                  Origen de las conversaciones y avance hacia una oportunidad.
+                </p>
+              </div>
+              <div class="insight-action">
+                <span class="micro">Para decidir</span>
+                <p id="data-decision">
+                  Dónde enfocar el contenido y la inversión en pauta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="console-footer">
+            <span>Tu información, organizada alrededor de tus objetivos.</span
+            ><span aria-hidden="true">↳ claridad para actuar</span>
+          </div>
+        </div>
+        <div class="data-note">
+          <span aria-hidden="true">↳</span>
+          <p>
+            Primero definimos qué necesitas saber. Después instrumentamos la
+            medición, validamos las fuentes y construimos el análisis. Los
+            resultados dependen de la información disponible y del alcance
+            acordado.
           </p>
         </div>
       </section>
-      <section
-        class="section process-section"
-        id="proceso"
-        aria-labelledby="process-title"
-      >
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <span class="section-mark" aria-hidden="true"></span>
-            <h2 id="process-title">De la plática a que<br />conteste solo.</h2>
+      <section class="demo-section light section-pad" id="recorrido">
+        <div class="demo-copy">
+          <span class="micro">Del interés al siguiente paso</span>
+          <h2 class="reveal">Una oportunidad.<br />Todo <em>conectado.</em></h2>
+          <p>
+            Así pueden trabajar juntos tu marketing, la IA y tus datos. Recorre
+            este ejemplo para ver qué pasa detrás de cada conversación.
+          </p>
+          <div class="demo-steps" aria-label="Etapas del ejemplo">
+            <button data-demo="0" aria-pressed="true">
+              <span>01</span>Atraer <i>↗</i></button
+            ><button data-demo="1" aria-pressed="false">
+              <span>02</span>Atender <i>↗</i></button
+            ><button data-demo="2" aria-pressed="false">
+              <span>03</span>Dar seguimiento <i>↗</i></button
+            ><button data-demo="3" aria-pressed="false">
+              <span>04</span>Aprender <i>↗</i>
+            </button>
           </div>
-          <ol class="process-grid">
-            <li data-reveal>
-              <span class="step-number" aria-hidden="true">01</span>
-              <h3>Diagnóstico.</h3>
-              <p>
-                Platicamos de tu negocio y vemos qué se puede automatizar
-                primero. Sin costo.
-              </p>
-            </li>
-            <li data-reveal>
-              <span class="step-number" aria-hidden="true">02</span>
-              <h3>Tu hoja de verdad.</h3>
-              <p>
-                Nos pasas precios, horarios y las preguntas que más te hacen. Es
-                lo único que te pedimos.
-              </p>
-            </li>
-            <li data-reveal>
-              <span class="step-number" aria-hidden="true">03</span>
-              <h3>Montaje.</h3>
-              <p>
-                En unos 10 días tu asistente está contestando y la app está
-                lista en tu celular.
-              </p>
-            </li>
-            <li data-reveal>
-              <span class="step-number" aria-hidden="true">04</span>
-              <h3>Medimos cada semana.</h3>
-              <p>
-                Tiempo de respuesta, conversaciones y citas. Lo que no funciona
-                se corrige.
-              </p>
-            </li>
-          </ol>
         </div>
-      </section>
-      <section class="section" id="preguntas" aria-labelledby="faq-title">
-        <div class="container faq-grid">
-          <div class="section-heading" data-reveal>
-            <span class="section-mark" aria-hidden="true"></span>
-            <h2 id="faq-title">Preguntas</h2>
+        <div class="demo-stage">
+          <div class="stage-top">
+            <span><i></i> El sistema en acción</span><b>Ejemplo de flujo</b>
           </div>
-          <div class="faq-list">
-            <details>
-              <summary>
-                ¿Tengo que cambiar de sistema?<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5v14" />
-                </svg>
-              </summary>
-              <div class="faq-answer">
-                <p>
-                  No. Mecha se monta encima de lo que ya usas: tu WhatsApp, tu
-                  Excel, tu correo.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                ¿Tengo que saber de tecnología?<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5v14" />
-                </svg>
-              </summary>
-              <div class="faq-answer">
-                <p>
-                  No. Lo único que te pedimos es tu información: precios,
-                  horarios y cómo atiendes.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                ¿El WhatsApp sigue siendo mío?<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5v14" />
-                </svg>
-              </summary>
-              <div class="faq-answer">
-                <p>
-                  Sí. Es tu número y tus clientes. El asistente trabaja para ti.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                ¿Qué pasa si el asistente contesta mal?<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5v14" />
-                </svg>
-              </summary>
-              <div class="faq-answer">
-                <p>
-                  Te avisamos el mismo día y se corrige en menos de 24 horas.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                ¿Cómo instalo la app?<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5v14" />
-                </svg>
-              </summary>
-              <div class="faq-answer">
-                <p>
-                  Abres la liga en tu celular y le das "Agregar a pantalla de
-                  inicio". Funciona en iPhone y Android, y en la compu desde el
-                  navegador.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                ¿De dónde sale la información del radar?<svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5v14" />
-                </svg>
-              </summary>
-              <div class="faq-answer">
-                <p>
-                  De fuentes públicas: redes y páginas de tus competidores,
-                  noticias de tu giro y de tu ciudad. Cada nota trae su liga.
-                </p>
-              </div>
-            </details>
-            </div>
-        </div>
-      </section>
-      <section
-        class="section contact-section"
-        id="contacto"
-        aria-labelledby="contact-title"
-      >
-        <div class="container contact-grid">
-          <div>
-            <h2 id="contact-title">¿Qué te está<br />quitando el día?</h2>
-            <p>Cuéntanos por WhatsApp y te decimos si se puede automatizar.</p>
-            <a class="button button-light" href="#contacto" data-whatsapp
-              >Escríbenos por WhatsApp<svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
-            ></a>
-            <div class="contact-details">
-              <p>
-                WhatsApp:
-                <span data-contact="whatsapp" tabindex="-1">449 155 7494</span>
-              </p>
-              </div>
-          </div>
-          <div class="contact-emblem" aria-hidden="true">
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path
-                d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-header">
+              <img
+                src="assets/mecha-hero-v2.webp"
+                width="38"
+                height="38"
+                alt="Robot de Mecha"
               />
-            </svg>
+              <div>
+                <b>Tu negocio + Mecha</b><span>Atención conectada</span>
+              </div>
+              <span aria-hidden="true">···</span>
+            </div>
+            <div class="chat" id="demo-chat" aria-live="polite">
+              <div class="chat-origin">Desde una campaña de tu marca ↗</div>
+              <div class="bubble incoming">
+                Hola, vi su publicación. ¿Me pueden dar información?
+              </div>
+              <div class="bubble outgoing">
+                ¡Claro! Cuéntame qué necesitas y te ayudo a encontrar el
+                siguiente paso.
+              </div>
+              <div class="chat-event">
+                <span>↗</span>El marketing abre la conversación.
+              </div>
+            </div>
+            <div class="phone-composer" aria-hidden="true">
+              <span>Escribe un mensaje</span><b>↑</b>
+            </div>
           </div>
+          <div class="demo-caption" aria-live="polite">
+            <b id="demo-title">Una buena entrada.</b>
+            <p id="demo-text">
+              Una campaña o una página bien pensada lleva el interés al canal
+              donde puedes atenderlo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="process section-pad" id="proceso">
+        <div class="process-title">
+          <span class="micro">Así trabajamos</span>
+          <h2 class="reveal">
+            De “estaría bueno”<br />a <span>“ya funciona”.</span>
+          </h2>
+          <p>Estrategia, creatividad e implementación con un mismo equipo.</p>
+        </div>
+        <div class="process-list">
+          <article class="reveal">
+            <span>01 / Escuchamos</span>
+            <h3>Encontramos el punto de partida.</h3>
+            <p>
+              Revisamos cómo llegan tus clientes, cómo los atiendes y qué
+              información tienes. Identificamos el problema que vale la pena
+              resolver primero.
+            </p>
+          </article>
+          <article class="reveal">
+            <span>02 / Diseñamos</span>
+            <h3>Le damos forma a la ruta.</h3>
+            <p>
+              Definimos alcance, herramientas, entregables y qué vamos a medir.
+              La propuesta parte de tu operación y de tus objetivos.
+            </p>
+          </article>
+          <article class="reveal">
+            <span>03 / Implementamos</span>
+            <h3>Lo conectamos y lo probamos.</h3>
+            <p>
+              Producimos el marketing, construimos los flujos e instrumentamos
+              los datos. Probamos contigo antes de integrarlo al trabajo diario.
+            </p>
+          </article>
+          <article class="reveal">
+            <span>04 / Afinamos</span>
+            <h3>Aprendemos de lo que pasa.</h3>
+            <p>
+              Revisamos la información, corregimos fricciones y ajustamos la
+              estrategia. Tu equipo conoce cómo usar y dar seguimiento a lo
+              implementado.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="collaboration light section-pad" id="colaboracion">
+        <div class="section-meta">
+          <span>Una propuesta a tu medida</span
+          ><span>Sin paquetes que te queden grandes</span>
+        </div>
+        <div class="collaboration-title">
+          <h2 class="reveal">Empieza donde<br />más lo <em>necesitas.</em></h2>
+          <p>
+            El alcance se define contigo. Podemos empezar por una prioridad y
+            conectar el resto conforme tu negocio lo necesite.
+          </p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan">
+            <span class="micro">Poner orden</span>
+            <h3>Diagnóstico<br />y estrategia.</h3>
+            <p>Para entender dónde estás y decidir por dónde empezar.</p>
+            <ul>
+              <li>Mapa del recorrido comercial</li>
+              <li>Revisión de canales y procesos</li>
+              <li>Plan de prioridades y medición</li>
+            </ul>
+            <div data-price="diagnostico" hidden></div>
+            <a href="#contacto" data-plan="Diagnóstico y estrategia"
+              >Encontrar mi punto de partida <span>↗</span></a
+            >
+          </article>
+          <article class="plan featured">
+            <span class="micro">Conectar las piezas</span>
+            <h3>Marketing<br />+ IA.</h3>
+            <p>
+              Para atraer oportunidades y darles seguimiento con un sistema que
+              trabaja contigo.
+            </p>
+            <ul>
+              <li>Estrategia y presencia de marca</li>
+              <li>Atención y automatizaciones</li>
+              <li>Medición del recorrido comercial</li>
+            </ul>
+            <div data-price="marketingIA" hidden></div>
+            <a href="#contacto" data-plan="Marketing + IA"
+              >Conectar mi negocio <span>↗</span></a
+            >
+          </article>
+          <article class="plan">
+            <span class="micro">Ver con claridad</span>
+            <h3>Análisis<br />de datos.</h3>
+            <p>
+              Para organizar la información y convertirla en decisiones
+              concretas.
+            </p>
+            <ul>
+              <li>Conexión y validación de fuentes</li>
+              <li>Tableros según tus objetivos</li>
+              <li>Análisis y recomendaciones</li>
+            </ul>
+            <div data-price="datos" hidden></div>
+            <a href="#contacto" data-plan="Análisis de datos"
+              >Darle dirección a mis datos <span>↗</span></a
+            >
+          </article>
+        </div>
+        <p class="scope-note">
+          Entregables, herramientas de terceros e inversión en anuncios se
+          especifican en cada propuesta.
+        </p>
+      </section>
+      <section class="faq section-pad" id="preguntas">
+        <div>
+          <span class="micro">Hablemos claro</span>
+          <h2>Buenas<br /><span>preguntas.</span></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>¿Mecha es para mi tipo de negocio?<span>+</span></summary>
+            <p>
+              Trabajamos con PyMEs mexicanas. El punto de partida es el
+              problema: atención lenta, tareas manuales, marketing sin rumbo o
+              datos difíciles de interpretar. Revisamos tu operación para saber
+              dónde podemos aportar.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Qué significa que implementan análisis de datos?<span>+</span>
+            </summary>
+            <p>
+              Definimos las preguntas que necesita responder tu negocio,
+              identificamos las fuentes, organizamos la información y
+              construimos la medición y los tableros necesarios. Después
+              traducimos el análisis en recomendaciones y acciones.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Tengo que cambiar todas mis herramientas?<span>+</span>
+            </summary>
+            <p>
+              Primero revisamos lo que ya usas: WhatsApp, hojas de cálculo,
+              agenda, sitio o sistema de ventas. Buscamos aprovecharlo y
+              acordamos contigo cualquier herramienta adicional y su costo.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿La IA puede pasar la conversación a una persona?<span>+</span>
+            </summary>
+            <p>
+              Sí. Definimos contigo los límites, las preguntas que puede
+              resolver y en qué situaciones debe avisar a tu equipo. La atención
+              humana forma parte del diseño del flujo.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Puedo empezar por una sola necesidad?<span>+</span>
+            </summary>
+            <p>
+              Sí. Podemos iniciar por una prioridad concreta. Diseñamos el
+              primer paso para que tenga sentido hoy y pueda conectarse con
+              marketing, automatización o datos después.
+            </p>
+          </details>
+          <details>
+            <summary>¿Cómo se define la inversión?<span>+</span></summary>
+            <p>
+              Depende del alcance, las herramientas y el acompañamiento que
+              necesites. Después de conocer tu operación, preparamos una
+              propuesta con entregables, condiciones y costos claros.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="contact section-pad" id="contacto">
+        <div class="contact-top">
+          <span>La siguiente chispa empieza contigo.</span
+          ><span>Aguascalientes → México</span>
+        </div>
+        <h2 class="reveal">
+          Prendamos<br /><span>algo bueno.</span><i aria-hidden="true">↗</i>
+        </h2>
+        <div class="contact-bottom">
+          <p>
+            Cuéntanos qué está frenando a tu negocio.<br />Encontramos juntos el
+            siguiente paso.
+          </p>
+          <a
+            class="contact-whatsapp magnetic"
+            data-whatsapp
+            href="https://wa.me/524491557494?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Mecha%20y%20quiero%20un%20diagn%C3%B3stico."
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span>Platiquemos por WhatsApp<small>449 155 7494</small></span
+            ><b aria-hidden="true">↗</b></a
+          >
+        </div>
+        <div class="brief-builder">
+          <label for="necesidad">¿Qué te gustaría resolver primero?</label>
+          <div>
+            <select id="necesidad">
+              <option value="">Selecciona una prioridad</option>
+              <option>Responder y dar seguimiento por WhatsApp</option>
+              <option>Automatizar cotizaciones o agenda</option>
+              <option>Mejorar mi marketing y mi página web</option>
+              <option>Organizar y analizar mis datos</option>
+              <option>Conectar marketing, IA y datos</option></select
+            ><a
+              id="brief-link"
+              href="https://wa.me/524491557494"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Abrir conversación <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p>Preparamos tu mensaje. Tú decides cuándo enviarlo en WhatsApp.</p>
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <a class="brand" href="#inicio" aria-label="Mecha, inicio"
-          ><img
-            src="assets/img/robot-busto-480.webp"
-            width="480"
-            height="459"
-            alt=""
-            loading="lazy"
-          /><span class="brand-text"
-            ><span class="brand-name">MECHA</span
-            ><span class="brand-tagline">AUTOMATIZACIÓN E IA</span></span
-          ></a
-        >
-        <p>Mecha — Automatización e IA para PyMEs</p>
-        <div class="footer-location">
-          <p data-city>Aguascalientes, México</p>
-          <p>© 2026 · Hecho en México</p>
-        </div>
+    <footer class="footer">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio de Mecha"
+        ><span class="brand-spark" aria-hidden="true">✳</span>mecha<span
+          class="brand-dot"
+          >✳</span
+        ></a
+      >
+      <p>IA + marketing + análisis de datos.<br />Ideas que se implementan.</p>
+      <div>
+        <span>Hecho para negocios que quieren avanzar.</span
+        ><button id="privacy-open" type="button">Privacidad</button
+        ><a href="#inicio">Volver arriba ↑</a>
       </div>
     </footer>
+    <dialog id="privacy-dialog">
+      <button class="dialog-close" aria-label="Cerrar aviso de privacidad">
+        ×
+      </button>
+      <h2>Tu información</h2>
+      <p id="privacy-medicion">
+        Este sitio no incluye formularios que almacenen tus datos ni
+        herramientas de analítica o publicidad. Las selecciones del recorrido se
+        usan únicamente en tu navegador.
+      </p>
+      <p>
+        Si abres WhatsApp, el mensaje se prepara en esa aplicación y tú decides
+        si lo envías. El tratamiento de la conversación está sujeto a las
+        condiciones de WhatsApp y al aviso de privacidad que Mecha te facilite
+        al iniciar la relación comercial.
+      </p>
+      <p>No envíes datos sensibles por el mensaje inicial.</p>
+    </dialog>
+    <div class="cursor-aura" aria-hidden="true"></div>
+    <div class="tech-cursor" aria-hidden="true">
+      <div class="cursor-frame"><i></i><i></i><i></i><i></i></div>
+      <span class="cursor-label"></span>
+    </div>
+    <div class="reading-line" aria-hidden="true"><i></i></div>
   </body>
 </html>

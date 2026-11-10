@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://agenciamecha.com/sitemap.xml
