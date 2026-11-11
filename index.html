@@ -41,6 +41,13 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="assets/Mecha-Simbolos.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tech.css" />
     <link rel="stylesheet" href="ajustes.css" />
@@ -52,6 +59,8 @@
     <script src="main.js?v=2" defer></script>
     <script src="tech.js" defer></script>
     <script src="medicion.js" defer></script>
+    <script src="panorama.js" defer></script>
+    <script src="movil.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -71,7 +80,9 @@
           "Inteligencia artificial",
           "Marketing digital",
           "Automatización",
-          "Análisis de datos"
+          "Análisis de datos",
+          "Consultoría en inteligencia artificial",
+          "Capacitación en inteligencia artificial"
         ]
       }
     </script>
@@ -177,6 +188,11 @@
                 poster="assets/mecha-poster-v2.jpg"
                 aria-label="Robot de Mecha animado al recorrer la página"
               >
+                <source
+                  src="assets/mecha-scroll-v2-movil.mp4"
+                  type="video/mp4"
+                  media="(max-width: 760px)"
+                />
                 <source src="assets/mecha-scroll-v2.mp4" type="video/mp4" />
               </video>
               <div class="visual-label label-left">
@@ -245,6 +261,10 @@
               Diseñamos la estrategia, hacemos el trabajo y dejamos funcionando
               las herramientas contigo.
             </p>
+            <p>
+              También somos consultores y capacitamos a tu equipo en el uso de
+              IA.
+            </p>
             <a class="text-link" href="#servicios"
               >Mira cómo se conecta todo <span aria-hidden="true">↓</span></a
             >
@@ -259,6 +279,190 @@
           ><span><b>Inteligencia artificial</b>Hace avanzar el trabajo</span
           ><i aria-hidden="true">↗</i
           ><span><b>Análisis de datos</b>Orienta la siguiente acción</span>
+        </div>
+      </section>
+      <section
+        class="panorama section-pad"
+        id="panorama"
+        aria-labelledby="panorama-title"
+      >
+        <div class="section-meta">
+          <span>La IA en las empresas mexicanas · 2026</span
+          ><span class="live-status"
+            ><i></i> Datos de un estudio publicado</span
+          >
+        </div>
+        <div class="panorama-heading">
+          <h2 id="panorama-title" class="reveal">
+            No te quedes atrás.<br /><span
+              >Implementa antes que tu competencia.</span
+            >
+          </h2>
+          <p>
+            Casi la mitad de las empresas en México ya usa inteligencia
+            artificial, pero la mayoría se quedó en lo básico. La ventaja es
+            para quien la implementa bien y primero.
+          </p>
+        </div>
+        <div class="stat-grid">
+          <article class="stat-card pop">
+            <div class="stat-ring" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle
+                  class="ring-track"
+                  cx="60"
+                  cy="60"
+                  r="52"
+                  pathLength="100"
+                />
+                <circle
+                  class="ring-value"
+                  cx="60"
+                  cy="60"
+                  r="52"
+                  pathLength="100"
+                  style="--v: 48"
+                />
+              </svg>
+              <b><span data-count="48">48</span>%</b>
+            </div>
+            <h3>Ya usa IA</h3>
+            <p>
+              de las empresas mexicanas utiliza inteligencia artificial. Un año
+              antes era el 38%.
+            </p>
+          </article>
+          <article class="stat-card pop">
+            <div class="stat-ring" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle
+                  class="ring-track"
+                  cx="60"
+                  cy="60"
+                  r="52"
+                  pathLength="100"
+                />
+                <circle
+                  class="ring-value"
+                  cx="60"
+                  cy="60"
+                  r="52"
+                  pathLength="100"
+                  style="--v: 52"
+                />
+              </svg>
+              <b><span data-count="52">52</span>%</b>
+            </div>
+            <h3>Todavía no la usa</h3>
+            <p>
+              es el resto: las empresas que aún no la incorporan a su trabajo
+              diario.
+            </p>
+          </article>
+          <article class="stat-card featured pop">
+            <div class="stat-ring" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle
+                  class="ring-track"
+                  cx="60"
+                  cy="60"
+                  r="52"
+                  pathLength="100"
+                />
+                <circle
+                  class="ring-value"
+                  cx="60"
+                  cy="60"
+                  r="52"
+                  pathLength="100"
+                  style="--v: 13"
+                />
+              </svg>
+              <b><span data-count="13">13</span>%</b>
+            </div>
+            <h3>La usa en serio</h3>
+            <p>
+              de las empresas que ya usan IA llegó a una etapa avanzada, con
+              sistemas hechos a su medida.
+            </p>
+          </article>
+        </div>
+        <div class="stat-levels pop">
+          <div class="levels-head">
+            <span class="micro">Entre las empresas que ya usan IA</span>
+            <span>¿Qué tan a fondo?</span>
+          </div>
+          <div
+            class="levels-bar"
+            role="img"
+            aria-label="De las empresas que ya usan IA: 63% en etapa básica, 24% en etapa intermedia y 13% en etapa avanzada"
+          >
+            <i class="lvl-basic" style="--w: 63"><b>63%</b></i
+            ><i class="lvl-mid" style="--w: 24"><b>24%</b></i
+            ><i class="lvl-adv" style="--w: 13"><b>13%</b></i>
+          </div>
+          <ul class="levels-legend">
+            <li>
+              <i class="lvl-basic"></i><b>Básica</b> Herramientas sueltas, sin
+              conectar al negocio.
+            </li>
+            <li>
+              <i class="lvl-mid"></i><b>Intermedia</b> Ya forma parte de algunos
+              procesos.
+            </li>
+            <li>
+              <i class="lvl-adv"></i><b>Avanzada</b> Sistemas a la medida que
+              trabajan solos.
+            </li>
+          </ul>
+        </div>
+        <div class="stat-facts">
+          <p class="pop">
+            <b><span data-count="88">88</span>%</b>
+            de las empresas que usan IA reporta mejoras de productividad.
+          </p>
+          <p class="pop">
+            <b><span data-count="49">49</span>%</b>
+            de las empresas señala la falta de talento calificado como barrera
+            para avanzar. Por eso también capacitamos a tu equipo.
+          </p>
+        </div>
+        <p class="stat-source">
+          Fuente: estudio
+          <i>Desbloqueando el potencial de la IA en México 2026</i>, elaborado
+          por Strand Partners para Amazon Web Services (AWS), según lo publicado
+          por
+          <a
+            href="https://dplnews.com/empresas-mexicanas-ia-casos-uso-avanzados-aws/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >DPL News</a
+          >
+          (13 ago 2026) e
+          <a
+            href="https://www.itsitio.com/mx/inteligencia-artificial/48-de-las-empresas-mexicanas-ya-utiliza-ia-pero-solo-13-llega-a-una-etapa-avanzada/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ITSitio</a
+          >
+          (25 ago 2026). El 52% es el complemento del 48% que ya la usa.
+        </p>
+        <div class="promise">
+          <h3 class="reveal">
+            Reducimos tu<br /><span>tiempo de trabajo.</span>
+          </h3>
+          <ul>
+            <li class="pop">Responde en minutos, no en horas.</li>
+            <li class="pop">Deja de cotizar y agendar a mano.</li>
+            <li class="pop">Que ningún cliente se quede sin respuesta.</li>
+            <li class="pop">
+              Tu equipo en lo importante; lo repetitivo, automatizado.
+            </li>
+          </ul>
+          <a class="hero-cta magnetic" href="#contacto"
+            ><span>Quiero implementar IA</span
+            ><span class="arrow-disc" aria-hidden="true">↗</span></a
+          >
         </div>
       </section>
       <section class="robot-lab section-pad" aria-labelledby="robot-lab-title">
@@ -371,7 +575,7 @@
       </section>
       <section class="services light section-pad" id="servicios">
         <div class="section-meta">
-          <span>Tres frentes. Una dirección.</span
+          <span>Cuatro frentes. Una dirección.</span
           ><span>Hecho para PyMEs mexicanas</span>
         </div>
         <h2 class="services-title reveal">
@@ -453,6 +657,31 @@
               <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
             </div>
             <b>Una mejor pregunta.<br />Una mejor decisión. ↗</b>
+          </div>
+        </article>
+        <article class="service-row">
+          <div class="service-number">04</div>
+          <div class="service-name">
+            <span class="micro">Que tu equipo la use bien.</span>
+            <h3>Consultoría y <br />capacitación en IA.</h3>
+          </div>
+          <div class="service-detail">
+            <p>
+              Somos consultores: te decimos dónde sí conviene usar IA en tu
+              negocio y capacitamos a tu equipo para que la aproveche desde el
+              primer día.
+            </p>
+            <ul>
+              <li>Diagnóstico de oportunidades de IA</li>
+              <li>Talleres prácticos para tu equipo</li>
+              <li>Capacitación en herramientas de IA</li>
+              <li>Acompañamiento en la implementación</li>
+            </ul>
+          </div>
+          <div class="service-art training-art" aria-hidden="true">
+            <span>EQUIPO → IA</span>
+            <div class="training-steps"><i></i><i></i><i></i><i></i></div>
+            <b>Aprender.<br />Aplicar. Avanzar. ↗</b>
           </div>
         </article>
       </section>
@@ -861,7 +1090,10 @@
               <option>Automatizar cotizaciones o agenda</option>
               <option>Mejorar mi marketing y mi página web</option>
               <option>Organizar y analizar mis datos</option>
-              <option>Conectar marketing, IA y datos</option></select
+              <option>Conectar marketing, IA y datos</option>
+              <option>
+                Consultoría o capacitación en IA para mi equipo
+              </option></select
             ><a
               id="brief-link"
               href="https://wa.me/524491557494"

@@ -1,5 +1,22 @@
 /* Ajustes sobre el diseño original. Se carga al final para no tocar style.css ni tech.css. */
 
+/* Símbolos propios (✳ ↗ ↔ ✓ ↳ Ⅱ). Archivo y DM Sans no los traen completos y el
+   celular los sacaba de su fuente de emoji. Se genera con herramientas/simbolos.py. */
+@font-face {
+  font-family: "Mecha Simbolos";
+  src: url("assets/Mecha-Simbolos.woff2") format("woff2");
+  font-display: block;
+  unicode-range: U+2161, U+2194, U+2197, U+21B3, U+2713, U+2733;
+}
+:root {
+  --heading: "Mecha Simbolos", Archivo, sans-serif;
+  --body: "Mecha Simbolos", "DM Sans", sans-serif;
+  --mono: "Mecha Simbolos", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+body {
+  font-variant-emoji: text;
+}
+
 /* Textos informativos que en celular quedaban en 7–8 px. */
 @media (max-width: 760px) {
   .chat-origin,
@@ -12,7 +29,6 @@
   .service-name .micro,
   .flow-heading > .micro,
   .flow-map > div > span,
-  .console-insights .micro,
   .console-footer,
   .data-core-strip .micro,
   .data-core-strip figcaption,
@@ -21,5 +37,377 @@
   .live-status,
   .stage-top {
     font-size: 10px;
+  }
+}
+
+/* ---------- Panorama: estadísticas de IA en empresas mexicanas ---------- */
+.panorama {
+  border-top: 1px solid var(--line);
+}
+.panorama-heading {
+  display: flex;
+  gap: 8vw;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.panorama-heading h2 {
+  font-size: clamp(36px, 4.6vw, 72px);
+}
+.panorama-heading h2 > span,
+.promise h3 > span {
+  color: var(--red-light);
+}
+.panorama-heading p {
+  max-width: 330px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 64px;
+}
+.stat-card {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 30px 26px 28px;
+  background: #1c1c21;
+}
+.stat-card.featured {
+  border-color: var(--red);
+  background: linear-gradient(160deg, #2a1614, #1c1c21 60%);
+}
+.stat-card h3 {
+  font-size: 22px;
+  margin: 22px 0 8px;
+}
+.stat-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  max-width: 260px;
+}
+.stat-ring {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.stat-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.stat-ring circle {
+  fill: none;
+  stroke-width: 9;
+}
+.ring-track {
+  stroke: #ffffff14;
+}
+.ring-value {
+  stroke: var(--paper);
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: calc(100 - var(--v));
+}
+.featured .ring-value {
+  stroke: var(--red-light);
+}
+.stat-ring > b {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--heading);
+  font-size: 40px;
+  letter-spacing: -0.04em;
+}
+.stat-levels {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 26px;
+}
+.levels-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.levels-head .micro {
+  color: var(--paper);
+}
+.levels-bar {
+  display: flex;
+  height: 54px;
+  gap: 3px;
+}
+.levels-bar i {
+  flex: 0 0 calc(var(--w) * 1% - 2px);
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  transform-origin: left;
+  overflow: hidden;
+}
+.levels-bar b {
+  font-family: var(--heading);
+  font-size: 17px;
+}
+.lvl-basic {
+  background: #4a4a52;
+}
+.lvl-mid {
+  background: var(--paper);
+  color: var(--ink);
+}
+.lvl-adv {
+  background: var(--red);
+}
+.levels-legend {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.levels-legend i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 8px;
+}
+.levels-legend b {
+  color: var(--paper);
+  margin-right: 6px;
+}
+.stat-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+.stat-facts p {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.stat-facts b {
+  font-family: var(--heading);
+  font-size: clamp(40px, 4vw, 60px);
+  letter-spacing: -0.04em;
+  color: var(--paper);
+  line-height: 1;
+}
+.stat-source {
+  margin: 26px 0 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #8a8a92;
+  max-width: 820px;
+}
+.stat-source a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.promise {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 30px 8vw;
+  align-items: start;
+}
+.promise h3 {
+  font-size: clamp(38px, 5vw, 80px);
+  line-height: 0.98;
+}
+.promise ul {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+.promise li {
+  font-family: var(--heading);
+  font-size: clamp(17px, 1.6vw, 23px);
+  letter-spacing: -0.02em;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.promise li:before {
+  content: "↳";
+  color: var(--red-light);
+  margin-right: 12px;
+}
+.promise .hero-cta {
+  grid-column: 2;
+  justify-self: start;
+}
+
+/* Aparición tipo pop-up. Solo se esconde si el script está listo para mostrarlo. */
+.pop-ready .pop {
+  opacity: 0;
+  transform: translateY(26px) scale(0.86);
+}
+.pop-ready .pop.in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.45s ease,
+    transform 0.7s cubic-bezier(0.2, 1.5, 0.35, 1);
+  transition-delay: calc(var(--i, 0) * 110ms);
+}
+.pop-ready .pop .ring-value {
+  stroke-dashoffset: 100;
+}
+.pop-ready .pop.in .ring-value {
+  stroke-dashoffset: calc(100 - var(--v));
+  transition: stroke-dashoffset 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) 0.25s;
+}
+.pop-ready .pop .levels-bar i {
+  transform: scaleX(0);
+}
+.pop-ready .pop.in .levels-bar i {
+  transform: none;
+  transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.pop-ready .pop.in .levels-bar i:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.pop-ready .pop.in .levels-bar i:nth-child(2) {
+  transition-delay: 0.55s;
+}
+.pop-ready .pop.in .levels-bar i:nth-child(3) {
+  transition-delay: 0.85s;
+}
+
+/* Cuarto servicio: consultoría y capacitación. */
+.training-art {
+  padding: 21px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.training-art > span {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+.training-steps {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 62px;
+}
+.training-steps i {
+  flex: 1;
+  background: var(--ink);
+  height: 25%;
+}
+.training-steps i:nth-child(2) {
+  height: 50%;
+}
+.training-steps i:nth-child(3) {
+  height: 75%;
+}
+.training-steps i:nth-child(4) {
+  height: 100%;
+  background: var(--red);
+}
+.training-art > b {
+  font-family: var(--heading);
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 900px) {
+  .panorama-heading {
+    display: block;
+  }
+  .panorama-heading p {
+    margin-top: 20px;
+    max-width: none;
+  }
+  .stat-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .stat-card {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 0 20px;
+    align-items: center;
+    padding: 22px 18px;
+  }
+  .stat-ring {
+    width: 110px;
+    height: 110px;
+    grid-row: span 2;
+  }
+  .stat-ring > b {
+    font-size: 28px;
+  }
+  .stat-card h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+    align-self: end;
+  }
+  .stat-card p {
+    align-self: start;
+  }
+  .stat-levels {
+    padding: 20px 16px;
+  }
+  .levels-head {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .levels-bar {
+    height: 46px;
+  }
+  .levels-bar b {
+    font-size: 14px;
+  }
+  .levels-legend,
+  .stat-facts,
+  .promise {
+    grid-template-columns: 1fr;
+  }
+  .promise {
+    margin-top: 64px;
+  }
+  .promise .hero-cta {
+    grid-column: 1;
+  }
+}
+
+/* Igual que las demás ilustraciones de servicio: oculta en anchos intermedios. */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .training-art {
+    display: none;
+  }
+}
+
+/* Inicio: más recorrido de scroll para que cada uno de los 3 capítulos dure
+   cerca de una pantalla. Antes el capítulo 2 se iba en medio deslizamiento. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-journey {
+    height: 420svh;
+  }
+  @media (max-width: 760px) {
+    .hero-journey {
+      height: 400svh;
+    }
   }
 }
