@@ -6,7 +6,7 @@ window.MECHA = {
   mostrarPrecios: false,
   // Sustituye null por el texto confirmado, por ejemplo: "<precio confirmado>".
   // Los precios solo aparecen si mostrarPrecios es true y hay un texto válido.
-  precios: { diagnostico: null, marketingIA: null, datos: null },
+  precios: { diagnostico: null, apps: null, procesos: null, datos: null },
   // Medición de visitas. Con null queda apagada.
   // goatcounter: el nombre de tu cuenta (el "micuenta" de micuenta.goatcounter.com).
   // ga4: el ID de medición de Google Analytics, con forma "G-XXXXXXXXXX".

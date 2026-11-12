@@ -425,3 +425,54 @@ body {
   .footer .redes{width:100%;order:-1}
   .footer .redes a{flex:1;justify-content:center;min-height:44px;font-size:12px}
 }
+
+/* Paquetes: cuatro columnas (12 nov 2026) */
+.plan-grid.plan-grid-4{grid-template-columns:repeat(4,1fr)}
+@media (min-width:761px) and (max-width:1100px){
+  .plan-grid.plan-grid-4{grid-template-columns:repeat(2,1fr)}
+  .plan-grid.plan-grid-4 .plan:nth-child(3){border-left:0}
+  .plan-grid.plan-grid-4 .plan:nth-child(n+3){border-top:1px solid #16161a3a}
+}
+
+/* Correo en contacto y pie */
+.contact-email{font-size:13px;margin:-14px 0 34px;color:var(--paper)}
+.contact-email a{border-bottom:1px solid currentColor;margin-left:6px}
+.contact-email a:hover{color:var(--ink)}
+.footer-mail{display:inline-block;margin-top:8px;border-bottom:1px solid currentColor}
+.footer-mail:hover{color:var(--red-light)}
+
+/* Confianza y quién está detrás */
+.trust{border-top:1px solid var(--line)}
+.trust-head{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:end;margin-bottom:56px}
+.trust-head .micro{grid-column:1/-1}
+.trust-head h2 span{color:var(--red-light)}
+.trust-head p{font-size:14px;color:var(--muted);max-width:420px}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.trust-grid article{padding:28px 24px 32px}
+.trust-grid article+article{border-left:1px solid var(--line)}
+.trust-grid span{font-size:11px;color:var(--red-light)}
+.trust-grid h3{font-size:24px;margin:18px 0 12px}
+.trust-grid p{font-size:13px;color:var(--muted)}
+.founder{display:grid;grid-template-columns:1fr 1.6fr auto;gap:40px;align-items:start;margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.founder h3{font-size:32px;margin:14px 0 6px}
+.founder-role{font-size:12px;color:var(--muted)}
+.founder>p{font-size:15px;line-height:1.6}
+@media (max-width:1100px){
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-grid article:nth-child(3){border-left:0}
+  .trust-grid article:nth-child(n+3){border-top:1px solid var(--line)}
+  .founder{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .trust-head{grid-template-columns:1fr;gap:18px;margin-bottom:36px}
+  .trust-grid{grid-template-columns:1fr}
+  .trust-grid article+article{border-left:0;border-top:1px solid var(--line)}
+  .trust-grid h3{font-size:22px}
+  .founder{gap:18px;margin-top:40px}
+  .contact-email{margin:0 0 28px}
+}
+.trust-head h2{font-size:clamp(40px,4.6vw,70px);margin:0}
+@media (max-width:760px){
+  .plan-grid.plan-grid-4{grid-template-columns:1fr}
+  .plan-grid.plan-grid-4 .plan+.plan{border-left:0;border-top:1px solid #16161a3a}
+}

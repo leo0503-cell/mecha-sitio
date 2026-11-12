@@ -35,9 +35,10 @@
   $$("[data-plan]").forEach((a) =>
     a.addEventListener("click", () => {
       const choices = {
-        "Diagnóstico y estrategia": "",
-        "Marketing + IA": "Conectar marketing, IA y datos",
-        "Análisis de datos": "Organizar y analizar mis datos",
+        "Diagnóstico de IA": "Consultoría o capacitación en IA para mi equipo",
+        "Apps a la medida": "Una app a la medida para mi negocio",
+        "Procesos automatizados": "Automatizar procesos que hoy se hacen a mano",
+        "Datos con dirección": "Organizar y analizar mis datos",
       };
       need.value = choices[a.dataset.plan] || "";
       updateBrief();
