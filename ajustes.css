@@ -478,22 +478,3 @@ body {
 }
 .founder-people{display:flex;flex-direction:column;gap:14px;margin-top:14px}
 .founder-people h3{margin:0 0 2px}
-
-/* Página Nosotros y liga desde el inicio (12 nov 2026) */
-.subpagina .header{background:var(--ink)}
-.header nav a[aria-current="page"]{color:var(--red-light)}
-.about-intro{padding-top:clamp(140px,18vw,220px);padding-bottom:40px}
-.about-intro h1{font-size:clamp(46px,7vw,110px);line-height:.95;margin:18px 0 0;letter-spacing:-.02em}
-.about-intro h1 span{color:var(--red-light)}
-.to-about{padding-top:0;padding-bottom:0}
-.to-about-link{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px;padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);transition:color .25s}
-.to-about-link b{font-family:var(--heading);font-size:clamp(22px,2.6vw,38px);font-weight:650;letter-spacing:-.01em}
-.to-about-link i{font-style:normal;font-size:34px;transition:transform .4s}
-.to-about-link:hover{color:var(--red-light)}
-.to-about-link:hover i{transform:translate(6px,-6px)}
-.contact-corto h2{margin-top:0}
-@media (max-width:760px){
-  .to-about-link{grid-template-columns:1fr auto;gap:10px 16px}
-  .to-about-link .micro{grid-column:1/-1}
-}
-.about-intro h1{max-width:12ch}
