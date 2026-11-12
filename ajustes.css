@@ -476,3 +476,5 @@ body {
   .plan-grid.plan-grid-4{grid-template-columns:1fr}
   .plan-grid.plan-grid-4 .plan+.plan{border-left:0;border-top:1px solid #16161a3a}
 }
+.founder-people{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.founder-people h3{margin:0 0 2px}
