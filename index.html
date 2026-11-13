@@ -50,16 +50,19 @@
     />
     <link rel="stylesheet" href="style.css?v=3" />
     <link rel="stylesheet" href="tech.css?v=3" />
-    <link rel="stylesheet" href="ajustes.css?v=5" />
+    <link rel="stylesheet" href="ajustes.css?v=casos1" />
     <link rel="preload" href="assets/mecha-poster-v2.jpg" as="image" />
     <script>
       document.documentElement.classList.add("js");
     </script>
     <script src="config.js?v=3" defer></script>
+    <script src="lead.js?v=1" defer></script>
     <script src="main.js?v=3" defer></script>
     <script src="tech.js?v=3" defer></script>
     <script src="medicion.js?v=3" defer></script>
     <script src="panorama.js?v=3" defer></script>
+    <script src="casos.js?v=1" defer></script>
+    <script src="casos-ui.js?v=1" defer></script>
     <script src="movil.js?v=3" defer></script>
     <script type="application/ld+json">
 {
@@ -222,11 +225,9 @@
     </div>
     <a class="skip" href="#contenido">Saltar al contenido</a>
     <header class="header">
-      <a class="brand" href="#inicio" aria-label="Mecha, inicio"
-        ><span class="brand-spark" aria-hidden="true">✳</span>mecha<span
-          class="brand-dot"
-          >✳</span
-        ></a
+      <a class="brand brand-firma" href="#inicio" aria-label="Mecha, inicio"
+        ><span class="bf-top">mecha<span class="bf-star" aria-hidden="true">✳</span></span
+        ><span class="bf-desc" aria-hidden="true">IA · Datos · Automatización · Apps</span></a
       >
       <nav id="navegacion" aria-label="Navegación principal">
         <a href="#sistema">Qué hacemos</a><a href="#datos">Los datos</a
@@ -694,6 +695,22 @@
               >Quiero resolver esto <span aria-hidden="true">↗</span></a
             >
           </div>
+        </div>
+      </section>
+      <section class="casos section-pad" id="casos" aria-labelledby="casos-title">
+        <div class="casos-head">
+          <span class="micro">140 casos que ya resolvemos</span>
+          <h2 id="casos-title" class="reveal">¿Algo más concreto?<br />Busca tu caso.</h2>
+        </div>
+        <label class="casos-buscar">
+          <span class="sr-only">Buscar un caso</span>
+          <input id="casos-q" type="search" placeholder="Ej. cotizaciones, inventario, Excel, reels…" autocomplete="off" />
+        </label>
+        <div class="casos-filtros" id="casos-filtros" role="group" aria-label="Filtrar por tema"></div>
+        <ul class="casos-lista" id="casos-lista" aria-live="polite"></ul>
+        <div class="casos-pie">
+          <button type="button" class="casos-mas" id="casos-mas" hidden></button>
+          <p class="casos-nota">¿No está el tuyo? <a data-whatsapp href="#contacto">Cuéntanos por WhatsApp ↗</a></p>
         </div>
       </section>
       <section class="services light section-pad" id="servicios">
@@ -1306,14 +1323,30 @@
           </div>
           <p>Preparamos tu mensaje. Tú decides cuándo enviarlo en WhatsApp.</p>
         </div>
+        <form class="lead-form" id="lead-form" novalidate>
+          <h3>¿Prefieres que te contactemos?</h3>
+          <p class="lead-intro">Déjanos tus datos y te escribimos en menos de un día hábil.</p>
+          <div class="lead-grid">
+            <label>Nombre<input name="nombre" autocomplete="name" required maxlength="120" /></label>
+            <label>Negocio<input name="negocio" autocomplete="organization" maxlength="120" /></label>
+            <label>WhatsApp o teléfono<input name="telefono" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" /></label>
+            <label>Correo<input name="correo" type="email" autocomplete="email" maxlength="120" /></label>
+            <label class="ancho">¿Qué quieres resolver?<textarea name="mensaje" rows="3" maxlength="1500"></textarea></label>
+            <label class="trampa" aria-hidden="true">Sitio web<input name="sitio_web" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <div class="lead-acciones">
+            <button type="submit">Enviar <span aria-hidden="true">↗</span></button>
+            <a class="lead-agenda" id="agenda-link" href="#" target="_blank" rel="noopener noreferrer" hidden>O agenda un diagnóstico de 30 min <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="lead-estado" id="lead-estado" role="status" aria-live="polite"></p>
+          <p class="lead-legal">Usamos tus datos solo para responderte. <button type="button" class="lead-priv" data-abrir-privacidad>Aviso de privacidad</button></p>
+        </form>
       </section>
     </main>
     <footer class="footer">
-      <a class="brand" href="#inicio" aria-label="Volver al inicio de Mecha"
-        ><span class="brand-spark" aria-hidden="true">✳</span>mecha<span
-          class="brand-dot"
-          >✳</span
-        ></a
+      <a class="brand brand-firma" href="#inicio" aria-label="Volver al inicio de Mecha"
+        ><span class="bf-top">mecha<span class="bf-star" aria-hidden="true">✳</span></span
+        ><span class="bf-desc" aria-hidden="true">IA · Datos · Automatización · Apps</span></a
       >
       <p>Apps, datos y automatización con IA.<br />Ideas que se implementan.<br /><a class="footer-mail" href="mailto:leonardo@agenciamecha.com">leonardo@agenciamecha.com</a></p>
       <div>

@@ -10,5 +10,9 @@ window.MECHA = {
   // Medición de visitas. Con null queda apagada.
   // goatcounter: el nombre de tu cuenta (el "micuenta" de micuenta.goatcounter.com).
   // ga4: el ID de medición de Google Analytics, con forma "G-XXXXXXXXXX".
+  // Formulario de contacto → CRM de Mecha. Con null el formulario se oculta.
+  leads: "https://mecha-crm.pages.dev/api/lead",
+  // Liga de "Agendar diagnóstico" (citas de Google Calendar). Con null no aparece.
+  agenda: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0veAaA2gaBzOmVh_d6UluOCZYJzSWx5nGNk08JdRHGGij-q-cUo2esL000GqmsGIt5MteYx5YU",
   medicion: { goatcounter: null, ga4: "G-NHZ0XHEVE7" },
 };
