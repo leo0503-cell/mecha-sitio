@@ -257,6 +257,7 @@
   ];
   const symptomTabs = $$("[data-symptom]");
   function activateSymptom(index) {
+    if (!$("#symptom-panel")) return;
     symptomTabs.forEach((b, i) => {
       b.setAttribute("aria-selected", String(i === index));
       b.tabIndex = i === index ? 0 : -1;
