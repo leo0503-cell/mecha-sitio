@@ -101,9 +101,19 @@
   function requestTick() {
     if (!raf && motion && !document.hidden) raf = requestAnimationFrame(tick);
   }
+  let canvasListo = false;
   function resize() {
+    // En celular la barra del navegador aparece/desaparece al scrollear y
+    // dispara resize; redimensionar el canvas ahí congela el scroll.
+    const nuevoAlto = $(".hero-sticky").getBoundingClientRect().height;
+    if (canvasListo && innerWidth === width && Math.abs(nuevoAlto - height) < 140) {
+      readingDirty = true;
+      requestTick();
+      return;
+    }
+    canvasListo = true;
     width = innerWidth;
-    height = $(".hero-sticky").getBoundingClientRect().height;
+    height = nuevoAlto;
     dpr = Math.min(devicePixelRatio || 1, 1.5);
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
@@ -210,7 +220,7 @@
       }
     }
     if (sceneVisible) {
-      if (time - lastPaint > 32) {
+      if (time - lastPaint > (canPoint() ? 32 : 66)) {
         drawNetwork(time);
         lastPaint = time;
       }

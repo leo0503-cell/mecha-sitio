@@ -548,3 +548,6 @@ body {
   .casos-filtros button{flex:none}
   .casos-lista{grid-template-columns:1fr}
 }
+
+/* Celular: evita que el navegador "acomode" el scroll cuando cambia el inicio */
+.hero-journey{overflow-anchor:none}

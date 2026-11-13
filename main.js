@@ -101,6 +101,9 @@
     chapterLabel.textContent = labels[index];
     counter.textContent = `0${index + 1} / 03`;
   }
+  const tactil = matchMedia("(pointer: coarse)").matches;
+  let ultimaBusqueda = 0,
+    busquedaPendiente = false;
   function seekFilm() {
     if (
       motionOff() ||
@@ -111,11 +114,20 @@
     )
       return;
     if (Math.abs(video.currentTime - targetTime) > 0.035) {
+      // En celular cada búsqueda decodifica en el hilo principal: se limita.
+      const ahora = performance.now();
+      if (tactil && ahora - ultimaBusqueda < 90) {
+        if (!busquedaPendiente) {
+          busquedaPendiente = true;
+          setTimeout(() => { busquedaPendiente = false; seekFilm(); }, 90);
+        }
+        return;
+      }
+      ultimaBusqueda = ahora;
       try {
-        video.currentTime = Math.min(
-          targetTime,
-          Math.max(0, video.duration - 0.045),
-        );
+        const t = Math.min(targetTime, Math.max(0, video.duration - 0.045));
+        if (tactil && typeof video.fastSeek === "function") video.fastSeek(t);
+        else video.currentTime = t;
       } catch {
         /* Poster remains available while metadata loads. */
       }
