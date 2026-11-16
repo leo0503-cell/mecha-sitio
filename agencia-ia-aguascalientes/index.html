@@ -56,9 +56,9 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="/ciudades.css?v=1" />
+    <link rel="stylesheet" href="/ciudades.css?v=2" />
     <script src="/config.js?v=3" defer></script>
-    <script src="/ciudades.js?v=1" defer></script>
+    <script src="/ciudades.js?v=2" defer></script>
     <script src="/medicion.js?v=3" defer></script>
     <script type="application/ld+json">
       {
@@ -146,6 +146,7 @@
     </script>
   </head>
   <body data-city="Aguascalientes">
+    <div class="reading-progress" aria-hidden="true"><i></i></div>
     <a class="skip" href="#contenido">Saltar al contenido</a>
     <header class="site-header shell">
       <a class="brand" href="/" aria-label="Mecha, inicio"
@@ -198,11 +199,76 @@
             y acordamos la forma de trabajar.
           </p>
         </div>
-        <aside class="system" aria-labelledby="system-title">
-          <div class="system-top">
-            <span>Marketing + IA + datos</span><b aria-hidden="true">✳</b>
+        <div class="robot-panel">
+          <div class="robot-visual" aria-hidden="true">
+            <div class="scene-grid"></div>
+            <div class="scene-orbit orbit-one"><i></i></div>
+            <div class="scene-orbit orbit-two"><i></i></div>
+            <div class="robot-depth">
+              <video
+                class="local-robot"
+                muted
+                playsinline
+                loop
+                preload="none"
+                poster="/assets/mecha-poster-v2.jpg"
+                data-desktop-src="/assets/mecha-scroll-v2.mp4"
+                data-mobile-src="/assets/mecha-scroll-v2-movil.mp4"
+                tabindex="-1"
+              ></video>
+            </div>
+            <span class="visual-tag tag-top"><i></i>Inteligencia aplicada</span>
+            <span class="visual-tag tag-bottom"
+              ><i></i>Hecho para tu negocio</span
+            >
+            <span class="scene-coordinate">M / IA</span>
+            <span class="scene-corner corner-one"></span
+            ><span class="scene-corner corner-two"></span>
           </div>
-          <h2 id="system-title">De una consulta a una operación conectada.</h2>
+          <div class="visual-controls">
+            <span class="scroll-hint"
+              ><i aria-hidden="true">↓</i>La chispa es el inicio.</span
+            ><button
+              class="motion-toggle"
+              type="button"
+              aria-pressed="false"
+              hidden
+            >
+              Pausar movimiento <span aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div
+        class="local-ticker"
+        role="img"
+        aria-label="Apps a medida, inteligencia artificial, datos, marketing y automatización"
+      >
+        <div class="ticker-track" aria-hidden="true">
+          <div>
+            <span>Apps a medida</span><b>✳</b
+            ><span>Inteligencia artificial</span><b>✳</b><span>Datos</span
+            ><b>✳</b><span>Marketing</span><b>✳</b><span>Automatización</span
+            ><b>✳</b>
+          </div>
+          <div>
+            <span>Apps a medida</span><b>✳</b
+            ><span>Inteligencia artificial</span><b>✳</b><span>Datos</span
+            ><b>✳</b><span>Marketing</span><b>✳</b><span>Automatización</span
+            ><b>✳</b>
+          </div>
+        </div>
+      </div>
+      <div class="system-shell shell">
+        <section class="system" aria-labelledby="system-title">
+          <div class="system-intro">
+            <div class="system-top">
+              <span>Marketing + IA + datos</span><b aria-hidden="true">✳</b>
+            </div>
+            <h2 id="system-title">
+              De una consulta a una operación conectada.
+            </h2>
+          </div>
           <ol>
             <li>
               <span class="system-index" aria-hidden="true">01</span>
@@ -229,8 +295,9 @@
           <p class="system-foot">
             Diseñamos el recorrido alrededor de tu negocio.
           </p>
-        </aside>
-      </section>
+        </section>
+      </div>
+
       <section
         class="section light"
         id="servicios"
