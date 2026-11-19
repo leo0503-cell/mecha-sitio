@@ -90,6 +90,7 @@
     cursorX = pointerX,
     cursorY = pointerY,
     pointerSeen = false;
+  let ultimoScroll = 0;
   let scenePhase = 0,
     readingDirty = true;
   const points = Array.from({ length: 64 }, (_, i) => {
@@ -106,7 +107,11 @@
     // En celular la barra del navegador aparece/desaparece al scrollear y
     // dispara resize; redimensionar el canvas ahí congela el scroll.
     const nuevoAlto = $(".hero-sticky").getBoundingClientRect().height;
-    if (canvasListo && innerWidth === width && Math.abs(nuevoAlto - height) < 140) {
+    if (
+      canvasListo &&
+      innerWidth === width &&
+      Math.abs(nuevoAlto - height) < 140
+    ) {
       readingDirty = true;
       requestTick();
       return;
@@ -220,7 +225,9 @@
       }
     }
     if (sceneVisible) {
-      if (time - lastPaint > (canPoint() ? 32 : 66)) {
+      // En celular la red no se redibuja mientras el dedo arrastra la página.
+      const quieto = canPoint() || performance.now() - ultimoScroll > 180;
+      if (quieto && time - lastPaint > (canPoint() ? 32 : 66)) {
         drawNetwork(time);
         lastPaint = time;
       }
@@ -241,6 +248,7 @@
     "scroll",
     () => {
       readingDirty = true;
+      ultimoScroll = performance.now();
       if (!motion) updateReading();
       else requestTick();
     },

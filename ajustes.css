@@ -606,3 +606,11 @@ body {
 .wa-meca:focus-visible{outline:none}
 @media (max-width:760px){.wa-meca-core{width:56px;height:56px}.wa-meca-label{display:none}}
 @media (prefers-reduced-motion:reduce){.wa-meca-ring{animation:none}}
+
+/* Celular (19 nov): el video del robot ya no lleva filtro y las etiquetas no
+   desenfocan el fondo. Recomponer filtro + desenfoque en cada cuadro trababa
+   el scroll del inicio. */
+@media (max-width: 760px), (pointer: coarse) {
+  .hero-visual video { filter: none; }
+  .visual-label { backdrop-filter: none; -webkit-backdrop-filter: none; background: #16161ae6; }
+}

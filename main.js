@@ -37,7 +37,8 @@
       const choices = {
         "Diagnóstico de IA": "Consultoría o capacitación en IA para mi equipo",
         "Apps a la medida": "Una app a la medida para mi negocio",
-        "Procesos automatizados": "Automatizar procesos que hoy se hacen a mano",
+        "Procesos automatizados":
+          "Automatizar procesos que hoy se hacen a mano",
         "Datos con dirección": "Organizar y analizar mis datos",
       };
       need.value = choices[a.dataset.plan] || "";
@@ -102,8 +103,6 @@
     counter.textContent = `0${index + 1} / 03`;
   }
   const tactil = matchMedia("(pointer: coarse)").matches;
-  let ultimaBusqueda = 0,
-    busquedaPendiente = false;
   function seekFilm() {
     if (
       motionOff() ||
@@ -114,23 +113,54 @@
     )
       return;
     if (Math.abs(video.currentTime - targetTime) > 0.035) {
-      // En celular cada búsqueda decodifica en el hilo principal: se limita.
-      const ahora = performance.now();
-      if (tactil && ahora - ultimaBusqueda < 90) {
-        if (!busquedaPendiente) {
-          busquedaPendiente = true;
-          setTimeout(() => { busquedaPendiente = false; seekFilm(); }, 90);
-        }
-        return;
-      }
-      ultimaBusqueda = ahora;
       try {
-        const t = Math.min(targetTime, Math.max(0, video.duration - 0.045));
-        if (tactil && typeof video.fastSeek === "function") video.fastSeek(t);
-        else video.currentTime = t;
+        video.currentTime = Math.min(
+          targetTime,
+          Math.max(0, video.duration - 0.045),
+        );
       } catch {
         /* Poster remains available while metadata loads. */
       }
+    }
+  }
+  // Celular: buscar cuadros mientras el dedo arrastra decodifica en el hilo
+  // principal y traba el scroll a tirones. En su lugar, hacia adelante el
+  // video se reproduce (decodificación por hardware) hasta alcanzar el punto
+  // del scroll; hacia atrás solo se busca cuando el scroll se detiene.
+  let persiguiendo = 0,
+    esperaQuieto = 0;
+  function detenerPersecucion() {
+    if (persiguiendo) cancelAnimationFrame(persiguiendo);
+    persiguiendo = 0;
+    if (!video.paused) video.pause();
+  }
+  function vigilarAvance() {
+    persiguiendo = 0;
+    if (motionOff() || document.hidden) return detenerPersecucion();
+    const falta = targetTime - video.currentTime;
+    if (falta <= 0.02) return detenerPersecucion();
+    video.playbackRate = Math.min(3, Math.max(1, falta * 2.5));
+    persiguiendo = requestAnimationFrame(vigilarAvance);
+  }
+  function chaseFilm() {
+    if (
+      motionOff() ||
+      document.hidden ||
+      !Number.isFinite(video.duration) ||
+      video.readyState < 2
+    )
+      return;
+    const falta = targetTime - video.currentTime;
+    clearTimeout(esperaQuieto);
+    if (falta > 0.05) {
+      if (video.paused && !video.seeking) {
+        const intento = video.play();
+        if (intento && intento.catch) intento.catch(() => {});
+      }
+      if (!persiguiendo) persiguiendo = requestAnimationFrame(vigilarAvance);
+    } else if (falta < -0.05) {
+      detenerPersecucion();
+      esperaQuieto = setTimeout(seekFilm, 160);
     }
   }
   function renderScroll() {
@@ -147,7 +177,10 @@
       String(1 + progress * 0.1),
     );
     $(".hero-visual").style.setProperty("--robot-y", `${-progress * 20}px`);
-    if (rect.bottom > 0 && rect.top < innerHeight) seekFilm();
+    if (rect.bottom > 0 && rect.top < innerHeight) {
+      if (tactil) chaseFilm();
+      else seekFilm();
+    } else if (tactil) detenerPersecucion();
   }
   function scheduleScroll() {
     if (!frameRequested && !motionOff()) {
@@ -164,7 +197,7 @@
     motionButton.textContent = motionOff()
       ? "Activar movimiento ↗"
       : "Pausar movimiento Ⅱ";
-    video.pause();
+    detenerPersecucion();
     if (motionOff()) {
       selectChapter(0);
       progressBar.style.transform = "scaleX(0)";
@@ -183,7 +216,7 @@
   });
   video.addEventListener("loadedmetadata", scheduleScroll);
   video.addEventListener("loadeddata", scheduleScroll);
-  video.addEventListener("seeked", seekFilm);
+  video.addEventListener("seeked", () => (tactil ? chaseFilm() : seekFilm()));
   video.addEventListener("error", () => {
     video.hidden = true;
     $(".hero-visual").style.backgroundImage =
