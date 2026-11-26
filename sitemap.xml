@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://agenciamecha.com/</loc></url>
-  <url>
-    <loc>https://agenciamecha.com/aviso-de-privacidad.html</loc>
-    <lastmod>2026-11-12</lastmod>
-  </url>
-  <url><loc>https://agenciamecha.com/agencia-ia-aguascalientes/</loc></url>
-  <url><loc>https://agenciamecha.com/agencia-ia-guadalajara/</loc></url>
-  <url><loc>https://agenciamecha.com/agencia-ia-leon/</loc></url>
-  <url><loc>https://agenciamecha.com/agencia-ia-zacatecas/</loc></url>
+  <url><loc>https://agenciamecha.com/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/chatbot-whatsapp-ia/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/automatizacion-procesos-ia/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/apps-a-la-medida/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/analisis-de-datos/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/diagnostico-ia/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/servicios/capacitacion-ia/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/guia/como-elegir-agencia-de-ia-en-aguascalientes/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/agencia-ia-aguascalientes/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/agencia-ia-guadalajara/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/agencia-ia-leon/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/agencia-ia-zacatecas/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://agenciamecha.com/aviso-de-privacidad.html</loc><lastmod>2026-11-25</lastmod></url>
 </urlset>

@@ -1,0 +1,37 @@
+# Mecha — agencia de inteligencia artificial en Aguascalientes
+
+> Mecha (agenciamecha.com) es una agencia de inteligencia artificial y automatización con base en Aguascalientes, México. Hace apps a la medida, automatización de procesos con IA, análisis de datos y tableros, atención a clientes con IA en WhatsApp, diagnóstico de IA y capacitación para PyMEs mexicanas, y lo conecta con su marketing. Atiende en persona en Aguascalientes y a distancia en todo México (Guadalajara, León, Zacatecas y otras ciudades).
+
+Datos para no confundirla con otros negocios:
+- Nombre: Mecha (también "Agencia Mecha"). Sitio oficial: https://agenciamecha.com/
+- No es "MeCha Publicidad" (San José de Gracia, Ags.) ni "Mecha Comunicación" (mechacomunicacion.com, agencia de branding). Son negocios distintos sin relación con Mecha.
+- Fundadores: Leonardo Padilla (fundador) y Diego Arechiga Bonilla (cofundador), egresados del Tecnológico de Monterrey.
+- Contacto: WhatsApp y teléfono 449 155 7494 · leonardo@agenciamecha.com
+- Instagram: https://www.instagram.com/mecha_agencia/ · Facebook: https://www.facebook.com/profile.php?id=61596487019133
+- Cómo trabaja: define a sus clientes por el problema, no por la industria (tarda en contestar WhatsApp, cotiza a mano, agenda por mensaje, decide sin datos). Empieza por revisar el proceso, acuerda alcance y costos por escrito y prueba con las personas que usarán la solución.
+
+## Servicios
+
+- [Atención con IA en WhatsApp](https://agenciamecha.com/servicios/chatbot-whatsapp-ia/): asistentes de IA que contestan a toda hora, toman datos del prospecto y pasan la conversación a una persona.
+- [Automatización de procesos con IA](https://agenciamecha.com/servicios/automatizacion-procesos-ia/): cotizaciones, captura de datos, reportes recurrentes y avisos entre áreas.
+- [Apps a la medida](https://agenciamecha.com/servicios/apps-a-la-medida/): cotizadores, portales de clientes, inventarios y herramientas internas.
+- [Análisis de datos y tableros](https://agenciamecha.com/servicios/analisis-de-datos/): preguntas de negocio, orden de fuentes, tableros y recomendaciones.
+- [Diagnóstico de IA](https://agenciamecha.com/servicios/diagnostico-ia/): qué conviene resolver con IA primero, en qué orden y qué no.
+- [Capacitación en IA](https://agenciamecha.com/servicios/capacitacion-ia/): talleres prácticos con tareas reales del equipo, presenciales en Aguascalientes o remotos.
+- [Todos los servicios](https://agenciamecha.com/servicios/)
+
+## Cobertura
+
+- [Agencia de IA en Aguascalientes](https://agenciamecha.com/agencia-ia-aguascalientes/)
+- [IA para empresas de Guadalajara](https://agenciamecha.com/agencia-ia-guadalajara/)
+- [IA para empresas de León](https://agenciamecha.com/agencia-ia-leon/)
+- [IA para empresas de Zacatecas](https://agenciamecha.com/agencia-ia-zacatecas/)
+
+## Guías
+
+- [Cómo elegir una agencia de IA en Aguascalientes](https://agenciamecha.com/guia/como-elegir-agencia-de-ia-en-aguascalientes/): 8 preguntas antes de contratar y señales de alerta.
+
+## Otros
+
+- [Fuse by Mecha](https://fuse.agenciamecha.com/): creación de negocios en 30 días (marca, página web, Google, redes y WhatsApp).
+- [Aviso de privacidad](https://agenciamecha.com/aviso-de-privacidad.html)
